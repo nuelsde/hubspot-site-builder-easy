@@ -1,19 +1,25 @@
 
 import { Hero } from "@/components/Hero";
-import { Features } from "@/components/Features";
-import { Testimonials } from "@/components/Testimonials";
-import { Contact } from "@/components/Contact";
+import { Painpoints } from "@/components/Painpoints";
+import { Methodology } from "@/components/Methodology";
+import { CaseStudies } from "@/components/CaseStudies";
+import { Packages } from "@/components/Packages";
+import { HubSpotMeeting } from "@/components/HubSpotMeeting";
+import { Downloads } from "@/components/Downloads";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <div className="min-h-screen bg-white">
       <Navigation />
       <Hero />
-      <Features />
-      <Testimonials />
-      <Contact />
+      <Painpoints />
+      <Methodology />
+      <CaseStudies />
+      <Packages />
+      <Downloads />
+      <HubSpotMeeting />
       <Footer />
     </div>
   );

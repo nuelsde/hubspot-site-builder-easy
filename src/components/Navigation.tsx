@@ -8,9 +8,11 @@ export const Navigation = () => {
 
   const navItems = [
     { name: "Home", href: "#home" },
-    { name: "Services", href: "#services" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Kontakt", href: "#contact" },
+    { name: "Herausforderungen", href: "#painpoints" },
+    { name: "5-Stufen-Modell", href: "#methodology" },
+    { name: "Erfolgsgeschichten", href: "#case-studies" },
+    { name: "Pakete", href: "#packages" },
+    { name: "Downloads", href: "#downloads" },
   ];
 
   return (
@@ -18,8 +20,8 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              BusinessPro
+            <h1 className="text-2xl font-bold text-brand-primary">
+              KI-<span className="text-brand-secondary">Transformation</span>
             </h1>
           </div>
 
@@ -30,13 +32,13 @@ export const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  className="text-gray-700 hover:text-brand-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   {item.name}
                 </a>
               ))}
-              <Button className="ml-4 bg-blue-600 hover:bg-blue-700">
-                Kostenlose Beratung
+              <Button className="ml-4 bg-brand-secondary hover:bg-orange-600">
+                Termin buchen
               </Button>
             </div>
           </div>
@@ -61,14 +63,14 @@ export const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-700 hover:text-brand-secondary block px-3 py-2 rounded-md text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button className="w-full mt-2 bg-blue-600 hover:bg-blue-700">
-                Kostenlose Beratung
+              <Button className="w-full mt-2 bg-brand-secondary hover:bg-orange-600">
+                Termin buchen
               </Button>
             </div>
           </div>
