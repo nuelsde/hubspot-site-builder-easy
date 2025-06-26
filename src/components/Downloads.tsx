@@ -1,7 +1,6 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { download, FileText, CheckSquare } from "lucide-react";
+import { Download, FileText, CheckSquare } from "lucide-react";
 
 const downloads = [
   {
@@ -60,7 +59,7 @@ export const Downloads = () => {
                   <span className="text-sm text-gray-500">{item.type} • {item.size}</span>
                 </div>
                 <Button className="w-full bg-brand-secondary hover:bg-orange-600">
-                  <download className="mr-2 h-4 w-4" />
+                  <Download className="mr-2 h-4 w-4" />
                   Kostenlos downloaden
                 </Button>
               </CardContent>

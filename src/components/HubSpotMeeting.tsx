@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { meeting, Calendar, Clock, CheckCircle } from "lucide-react";
+import { Calendar, Clock, CheckCircle, Video } from "lucide-react";
 
 export const HubSpotMeeting = () => {
   return (
@@ -62,7 +62,7 @@ export const HubSpotMeeting = () => {
               <CardContent>
                 {/* HubSpot Meeting Widget - Replace with actual HubSpot embed code */}
                 <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                  <meeting className="h-12 w-12 text-gray-400 mx-auto mb-4" />
+                  <Video className="h-12 w-12 text-gray-400 mx-auto mb-4" />
                   <h4 className="text-lg font-semibold text-gray-700 mb-2">
                     HubSpot Meeting Widget
                   </h4>
