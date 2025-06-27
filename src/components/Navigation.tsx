@@ -9,7 +9,7 @@ export const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "Herausforderungen", href: "#painpoints" },
-    { name: "5 Phasen", href: "#methodology" },
+    { name: "5&nbsp;Phasen", href: "#methodology" },
     { name: "Erfolgsgeschichten", href: "#case-studies" },
     { name: "Pakete", href: "#packages" },
     { name: "Downloads", href: "#downloads" },
