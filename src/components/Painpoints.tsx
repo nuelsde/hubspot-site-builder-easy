@@ -29,12 +29,7 @@ export const Painpoints = () => {
   return (
     <section id="painpoints" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
-        }}
-      />
+      
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
