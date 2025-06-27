@@ -1,0 +1,99 @@
+
+{# HubSpot Landing Page Template #}
+<!DOCTYPE html>
+<html lang="{{ page_meta.html_lang }}">
+<head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title or page_meta.name }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    {# Brand Colors - Make configurable via module #}
+    <style>
+        :root {
+            --brand-primary: {{ module.brand_colors.primary or '#073450' }};
+            --brand-secondary: {{ module.brand_colors.secondary or '#ef7c01' }};
+        }
+        
+        .bg-brand-primary { background-color: var(--brand-primary); }
+        .bg-brand-secondary { background-color: var(--brand-secondary); }
+        .text-brand-primary { color: var(--brand-primary); }
+        .text-brand-secondary { color: var(--brand-secondary); }
+        .border-brand-primary { border-color: var(--brand-primary); }
+        .border-brand-secondary { border-color: var(--brand-secondary); }
+    </style>
+    
+    {# Include Tailwind CSS or your compiled CSS #}
+    {{ require_css(get_asset_url("./css/styles.css")) }}
+    
+    {# HubSpot Required CSS #}
+    {{ standard_header_includes }}
+</head>
+<body>
+    {# Navigation Module #}
+    {% module "navigation" 
+        path="../modules/navigation"
+        label="Navigation" 
+    %}
+    
+    {# Hero Section Module #}
+    {% module "hero_section"
+        path="../modules/hero"
+        label="Hero Section"
+    %}
+    
+    {# Problem Section Module #}
+    {% module "problem_section"
+        path="../modules/problem-section"
+        label="Problem Section"
+    %}
+    
+    {# Process/Methodology Section Module #}
+    {% module "process_section"
+        path="../modules/process-section"
+        label="Process Section"
+    %}
+    
+    {# Features Section Module #}
+    {% module "features_section"
+        path="../modules/features-section"
+        label="Features Section"
+    %}
+    
+    {# Case Studies Section Module #}
+    {% module "case_studies_section"
+        path="../modules/case-studies"
+        label="Case Studies Section"
+    %}
+    
+    {# Packages/Pricing Section Module #}
+    {% module "packages_section"
+        path="../modules/packages"
+        label="Packages Section"
+    %}
+    
+    {# Downloads Section Module #}
+    {% module "downloads_section"
+        path="../modules/downloads"
+        label="Downloads Section"
+    %}
+    
+    {# Meeting/CTA Section Module #}
+    {% module "meeting_section"
+        path="../modules/meeting"
+        label="Meeting Section"
+    %}
+    
+    {# Footer Module #}
+    {% module "footer"
+        path="../modules/footer"
+        label="Footer"
+    %}
+    
+    {# JavaScript #}
+    {{ require_js(get_asset_url("./js/main.js")) }}
+    
+    {# HubSpot Required JS #}
+    {{ standard_footer_includes }}
+</body>
+</html>

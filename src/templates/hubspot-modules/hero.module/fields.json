@@ -1,0 +1,125 @@
+
+[
+  {
+    "id": "background_image",
+    "name": "Background Image",
+    "label": "Hero Background Image",
+    "required": false,
+    "locked": false,
+    "type": "image",
+    "default": {
+      "size_type": "auto",
+      "src": ""
+    }
+  },
+  {
+    "id": "badge_text",
+    "name": "badge_text",
+    "label": "Badge Text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "badge_icon",
+    "name": "badge_icon",
+    "label": "Badge Icon (HTML/Emoji)",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "main_title",
+    "name": "main_title",
+    "label": "Main Title",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "Ihr Haupttitel"
+  },
+  {
+    "id": "highlighted_title",
+    "name": "highlighted_title",
+    "label": "Highlighted Title Part",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "description",
+    "name": "description",
+    "label": "Hero Description",
+    "required": true,
+    "locked": false,
+    "type": "textarea",
+    "default": "Ihre Beschreibung hier..."
+  },
+  {
+    "id": "primary_button_text",
+    "name": "primary_button_text",
+    "label": "Primary Button Text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "primary_button_link",
+    "name": "primary_button_link",
+    "label": "Primary Button Link",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "#"
+  },
+  {
+    "id": "secondary_button_text",
+    "name": "secondary_button_text",
+    "label": "Secondary Button Text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "secondary_button_link",
+    "name": "secondary_button_link",
+    "label": "Secondary Button Link",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "#"
+  },
+  {
+    "id": "stats",
+    "name": "stats",
+    "label": "Statistics",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "number",
+        "name": "number",
+        "label": "Statistic Number",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "label",
+        "name": "label",
+        "label": "Statistic Label",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      }
+    ],
+    "default": []
+  }
+]

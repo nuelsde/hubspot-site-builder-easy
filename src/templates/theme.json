@@ -1,0 +1,52 @@
+
+{
+  "label": "KI-Transformation Template",
+  "preview_path": "./templates/landing-page.html",
+  "screenshot_path": "./images/template-preview.png",
+  "template_type": "page",
+  "is_available_for_new_content": true,
+  "description": "Ein professionelles Landing Page Template für KI-Beratung und ähnliche Business-Services",
+  "category": "business",
+  "version": "1.0",
+  "author": "Ihr Name",
+  "settings": [
+    {
+      "id": "brand_colors",
+      "label": "Brand Colors",
+      "type": "group",
+      "children": [
+        {
+          "id": "primary",
+          "label": "Primary Color",
+          "type": "color",
+          "default": {
+            "color": "#073450"
+          }
+        },
+        {
+          "id": "secondary", 
+          "label": "Secondary Color",
+          "type": "color",
+          "default": {
+            "color": "#ef7c01"
+          }
+        }
+      ]
+    },
+    {
+      "id": "typography",
+      "label": "Typography",
+      "type": "group", 
+      "children": [
+        {
+          "id": "font_family",
+          "label": "Font Family",
+          "type": "font",
+          "default": {
+            "font": "Inter"
+          }
+        }
+      ]
+    }
+  ]
+}
