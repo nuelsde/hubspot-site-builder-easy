@@ -7,7 +7,6 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
     { name: "Herausforderungen", href: "#painpoints" },
     { name: "5 Phasen", href: "#methodology" },
     { name: "Erfolgsgeschichten", href: "#case-studies" },
