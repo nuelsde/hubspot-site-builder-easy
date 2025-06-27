@@ -9,11 +9,18 @@ export const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "Herausforderungen", href: "#painpoints" },
-    { name: "5-Stufen-Modell", href: "#methodology" },
+    { name: "5 Phasen", href: "#methodology" },
     { name: "Erfolgsgeschichten", href: "#case-studies" },
     { name: "Pakete", href: "#packages" },
     { name: "Downloads", href: "#downloads" },
   ];
+
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
@@ -29,15 +36,18 @@ export const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="text-gray-700 hover:text-brand-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                  onClick={() => scrollToSection(item.href)}
+                  className="text-gray-700 hover:text-brand-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
-              <Button className="ml-4 bg-brand-secondary hover:bg-orange-600">
+              <Button 
+                className="ml-4 bg-brand-secondary hover:bg-orange-600"
+                onClick={() => scrollToSection('#meeting')}
+              >
                 Termin buchen
               </Button>
             </div>
@@ -60,16 +70,24 @@ export const Navigation = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="text-gray-700 hover:text-brand-secondary block px-3 py-2 rounded-md text-base font-medium"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => {
+                    scrollToSection(item.href);
+                    setIsOpen(false);
+                  }}
+                  className="text-gray-700 hover:text-brand-secondary block px-3 py-2 rounded-md text-base font-medium w-full text-left"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
-              <Button className="w-full mt-2 bg-brand-secondary hover:bg-orange-600">
+              <Button 
+                className="w-full mt-2 bg-brand-secondary hover:bg-orange-600"
+                onClick={() => {
+                  scrollToSection('#meeting');
+                  setIsOpen(false);
+                }}
+              >
                 Termin buchen
               </Button>
             </div>

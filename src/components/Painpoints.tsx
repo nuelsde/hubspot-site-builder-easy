@@ -27,8 +27,16 @@ const painpoints = [
 
 export const Painpoints = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <section id="painpoints" className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+        }}
+      />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">
             Kennen Sie diese Herausforderungen?
@@ -41,7 +49,7 @@ export const Painpoints = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {painpoints.map((painpoint, index) => (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-red-500">
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-l-4 border-l-red-500 bg-white/95 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -62,12 +70,12 @@ export const Painpoints = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="bg-brand-secondary/10 border border-brand-secondary/20 rounded-lg p-8 max-w-4xl mx-auto">
+          <div className="bg-brand-secondary/10 border border-brand-secondary/20 rounded-lg p-8 max-w-4xl mx-auto backdrop-blur-sm">
             <h3 className="text-2xl font-bold text-brand-primary mb-4">
               Die Lösung: Systematische KI-Transformation
             </h3>
             <p className="text-lg text-gray-700 mb-6">
-              Unser 5-Stufen-Modell bringt Klarheit in das KI-Chaos und macht Ihr Unternehmen 
+              Unser 5-Phasen-Modell bringt Klarheit in das KI-Chaos und macht Ihr Unternehmen 
               systematisch fit für die KI-Zukunft.
             </p>
           </div>
