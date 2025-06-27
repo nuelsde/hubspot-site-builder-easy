@@ -35,10 +35,6 @@ interface LandingPageTemplateProps {
     backgroundImage?: string;
   };
   sections: TemplateSection[];
-  navigationItems?: Array<{
-    name: string;
-    href: string;
-  }>;
   brandColors: {
     primary: string;
     secondary: string;
@@ -50,12 +46,14 @@ const LandingPageTemplate: React.FC<LandingPageTemplateProps> = ({
   description,
   heroConfig,
   sections,
-  navigationItems,
   brandColors
 }) => {
   return (
-    <div className="min-h-screen bg-white">
-      <Navigation navigationItems={navigationItems} brandColors={brandColors} />
+    <div className="min-h-screen bg-white" style={{
+      '--brand-primary': brandColors.primary,
+      '--brand-secondary': brandColors.secondary
+    } as React.CSSProperties}>
+      <Navigation />
       
       {/* Hero Section */}
       <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -71,15 +69,15 @@ const LandingPageTemplate: React.FC<LandingPageTemplateProps> = ({
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center">
             {heroConfig.badge && (
-              <div className="inline-flex items-center px-4 py-2 bg-brand-secondary/10 border border-brand-secondary/20 rounded-full text-brand-secondary text-sm font-medium mb-6">
+              <div className="inline-flex items-center px-4 py-2 bg-orange-100 border border-orange-200 rounded-full text-orange-600 text-sm font-medium mb-6">
                 {heroConfig.badge.icon}
                 {heroConfig.badge.text}
               </div>
             )}
             
-            <h1 className="text-4xl md:text-6xl font-bold text-brand-primary mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ color: brandColors.primary }}>
               {heroConfig.title}{" "}
-              <span className="text-brand-primary font-black">
+              <span className="font-black" style={{ color: brandColors.primary }}>
                 {heroConfig.subtitle}
               </span>
             </h1>
@@ -89,11 +87,26 @@ const LandingPageTemplate: React.FC<LandingPageTemplateProps> = ({
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <button className="bg-brand-primary hover:bg-brand-primary/90 text-white text-lg px-8 py-4 rounded-lg font-semibold transition-colors">
+              <button 
+                className="text-white text-lg px-8 py-4 rounded-lg font-semibold transition-colors hover:opacity-90"
+                style={{ backgroundColor: brandColors.primary }}
+              >
                 {heroConfig.primaryButton.text}
               </button>
               {heroConfig.secondaryButton && (
-                <button className="border-2 border-brand-secondary text-brand-secondary hover:bg-brand-secondary hover:text-white text-lg px-8 py-4 rounded-lg font-semibold transition-colors">
+                <button 
+                  className="border-2 text-lg px-8 py-4 rounded-lg font-semibold transition-colors hover:text-white"
+                  style={{ 
+                    borderColor: brandColors.secondary, 
+                    color: brandColors.secondary,
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = brandColors.secondary;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = 'transparent';
+                  }}
+                >
                   {heroConfig.secondaryButton.text}
                 </button>
               )}
@@ -102,8 +115,10 @@ const LandingPageTemplate: React.FC<LandingPageTemplateProps> = ({
             {heroConfig.stats && (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                 {heroConfig.stats.map((stat, index) => (
-                  <div key={index} className="bg-white/90 p-6 rounded-lg shadow-lg border-l-4 border-brand-secondary backdrop-blur-sm">
-                    <h3 className="text-2xl font-bold text-brand-primary mb-2">{stat.number}</h3>
+                  <div key={index} className="bg-white/90 p-6 rounded-lg shadow-lg backdrop-blur-sm" style={{
+                    borderLeft: `4px solid ${brandColors.secondary}`
+                  }}>
+                    <h3 className="text-2xl font-bold mb-2" style={{ color: brandColors.primary }}>{stat.number}</h3>
                     <p className="text-gray-600">{stat.label}</p>
                   </div>
                 ))}
