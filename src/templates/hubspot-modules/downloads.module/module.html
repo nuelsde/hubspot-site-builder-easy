@@ -1,0 +1,63 @@
+
+<!-- Downloads Section -->
+<section id="downloads" class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+  {% if module.background_image.src %}
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(239, 246, 255, 0.9), rgba(255, 237, 213, 0.9)), url('{{ module.background_image.src }}');"></div>
+  {% endif %}
+  
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4" style="color: var(--brand-primary);">
+        {{ module.section_title }}
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        {{ module.section_description }}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {% for item in module.download_items %}
+      <div class="bg-white/95 hover:shadow-xl transition-all duration-300 group backdrop-blur-sm rounded-lg border p-6">
+        <div class="text-center mb-6">
+          <div class="mx-auto mb-4 p-3 rounded-full w-fit transition-colors" style="background-color: var(--brand-secondary-light);">
+            <div class="text-2xl" style="color: var(--brand-secondary);">{{ item.icon }}</div>
+          </div>
+          <h3 class="text-xl font-bold mb-2" style="color: var(--brand-primary);">
+            {{ item.title }}
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            {{ item.description }}
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="mb-4">
+            <span class="text-sm text-gray-500">{{ item.type }} • {{ item.size }}</span>
+          </div>
+          <button class="w-full text-white px-6 py-3 rounded-lg font-semibold transition-colors" style="background-color: var(--brand-secondary);">
+            📥 {{ item.cta_text }}
+          </button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if module.newsletter_section.show %}
+    <div class="text-center mt-12">
+      <div class="bg-white/95 border-2 rounded-lg p-8 max-w-2xl mx-auto backdrop-blur-sm" style="border-color: var(--brand-secondary);">
+        <h3 class="text-xl font-bold mb-4" style="color: var(--brand-primary);">
+          {{ module.newsletter_section.title }}
+        </h3>
+        <p class="text-gray-700 mb-6">
+          {{ module.newsletter_section.description }}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <input type="email" placeholder="{{ module.newsletter_section.placeholder }}" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:border-transparent" style="focus:ring-color: var(--brand-secondary);">
+          <button class="text-white px-6 py-2 rounded-lg font-semibold transition-colors" style="background-color: var(--brand-primary);">
+            {{ module.newsletter_section.button_text }}
+          </button>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>

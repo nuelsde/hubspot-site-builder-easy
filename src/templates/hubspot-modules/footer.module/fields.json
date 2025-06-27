@@ -1,0 +1,166 @@
+
+[
+  {
+    "id": "company_name",
+    "name": "company_name",
+    "label": "Company Name",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "Ihr Unternehmen"
+  },
+  {
+    "id": "company_description",
+    "name": "company_description",
+    "label": "Company Description",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": "Beschreibung Ihres Unternehmens"
+  },
+  {
+    "id": "social_links",
+    "name": "social_links",
+    "label": "Social Media Links",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "icon",
+        "name": "icon",
+        "label": "Icon (Emoji or HTML)",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "📱"
+      },
+      {
+        "id": "url",
+        "name": "url",
+        "label": "URL",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "#"
+      }
+    ],
+    "default": []
+  },
+  {
+    "id": "services_title",
+    "name": "services_title",
+    "label": "Services Section Title",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "Services"
+  },
+  {
+    "id": "services",
+    "name": "services",
+    "label": "Services",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "name",
+        "name": "name",
+        "label": "Service Name",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "url",
+        "name": "url",
+        "label": "Service URL",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "#"
+      }
+    ],
+    "default": []
+  },
+  {
+    "id": "contact_title",
+    "name": "contact_title",
+    "label": "Contact Section Title",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "Kontakt"
+  },
+  {
+    "id": "contact_phone",
+    "name": "contact_phone",
+    "label": "Phone Number",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "contact_email",
+    "name": "contact_email",
+    "label": "Email Address",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": ""
+  },
+  {
+    "id": "contact_address",
+    "name": "contact_address",
+    "label": "Address",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": ""
+  },
+  {
+    "id": "copyright_text",
+    "name": "copyright_text",
+    "label": "Copyright Text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "© 2024 Ihr Unternehmen. Alle Rechte vorbehalten."
+  },
+  {
+    "id": "legal_links",
+    "name": "legal_links",
+    "label": "Legal Links",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "name",
+        "name": "name",
+        "label": "Link Name",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "url",
+        "name": "url",
+        "label": "Link URL",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "#"
+      }
+    ],
+    "default": [
+      {"name": "Datenschutz", "url": "#"},
+      {"name": "Impressum", "url": "#"},
+      {"name": "AGB", "url": "#"}
+    ]
+  }
+]

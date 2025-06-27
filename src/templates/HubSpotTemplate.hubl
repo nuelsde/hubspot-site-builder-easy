@@ -8,11 +8,12 @@
     <meta name="description" content="{{ content.meta_description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    {# Brand Colors - Make configurable via module #}
+    {# Brand Colors from Theme Settings #}
     <style>
         :root {
-            --brand-primary: {{ module.brand_colors.primary or '#073450' }};
-            --brand-secondary: {{ module.brand_colors.secondary or '#ef7c01' }};
+            --brand-primary: {{ theme.brand_colors.primary or '#073450' }};
+            --brand-secondary: {{ theme.brand_colors.secondary or '#ef7c01' }};
+            --brand-secondary-light: {{ theme.brand_colors.secondary }}20;
         }
         
         .bg-brand-primary { background-color: var(--brand-primary); }
@@ -21,6 +22,40 @@
         .text-brand-secondary { color: var(--brand-secondary); }
         .border-brand-primary { border-color: var(--brand-primary); }
         .border-brand-secondary { border-color: var(--brand-secondary); }
+        
+        /* Responsive Layout */
+        .max-w-7xl { max-width: 80rem; }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+        
+        /* Grid System */
+        .grid { display: grid; }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .gap-8 { gap: 2rem; }
+        
+        @media (min-width: 768px) {
+            .md\\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .md\\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        
+        @media (min-width: 1024px) {
+            .lg\\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .font-bold { font-weight: 700; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-4xl { font-size: 2.25rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-16 { margin-bottom: 4rem; }
+        .p-6 { padding: 1.5rem; }
+        .p-8 { padding: 2rem; }
+        .rounded-lg { border-radius: 0.5rem; }
+        .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .transition-all { transition: all 0.3s; }
+        .hover\\:shadow-xl:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
     </style>
     
     {# Include Tailwind CSS or your compiled CSS #}
@@ -32,61 +67,55 @@
 <body>
     {# Navigation Module #}
     {% module "navigation" 
-        path="../modules/navigation"
+        path="@hubspot/navigation"
         label="Navigation" 
     %}
     
     {# Hero Section Module #}
     {% module "hero_section"
-        path="../modules/hero"
+        path="@hubspot/hero"
         label="Hero Section"
     %}
     
-    {# Problem Section Module #}
-    {% module "problem_section"
-        path="../modules/problem-section"
-        label="Problem Section"
+    {# Painpoints Section Module #}
+    {% module "painpoints_section"
+        path="@hubspot/painpoints"
+        label="Painpoints Section"
     %}
     
-    {# Process/Methodology Section Module #}
-    {% module "process_section"
-        path="../modules/process-section"
-        label="Process Section"
-    %}
-    
-    {# Features Section Module #}
-    {% module "features_section"
-        path="../modules/features-section"
-        label="Features Section"
+    {# Methodology Section Module #}
+    {% module "methodology_section"
+        path="@hubspot/methodology"
+        label="Methodology Section"
     %}
     
     {# Case Studies Section Module #}
     {% module "case_studies_section"
-        path="../modules/case-studies"
+        path="@hubspot/case-studies"
         label="Case Studies Section"
     %}
     
-    {# Packages/Pricing Section Module #}
+    {# Packages Section Module #}
     {% module "packages_section"
-        path="../modules/packages"
+        path="@hubspot/packages"
         label="Packages Section"
     %}
     
     {# Downloads Section Module #}
     {% module "downloads_section"
-        path="../modules/downloads"
+        path="@hubspot/downloads"
         label="Downloads Section"
     %}
     
-    {# Meeting/CTA Section Module #}
+    {# Meeting Section Module #}
     {% module "meeting_section"
-        path="../modules/meeting"
+        path="@hubspot/meeting"
         label="Meeting Section"
     %}
     
     {# Footer Module #}
     {% module "footer"
-        path="../modules/footer"
+        path="@hubspot/footer"
         label="Footer"
     %}
     

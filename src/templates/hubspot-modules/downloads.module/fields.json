@@ -1,0 +1,153 @@
+
+[
+  {
+    "id": "background_image",
+    "name": "background_image",
+    "label": "Background Image",
+    "required": false,
+    "locked": false,
+    "type": "image",
+    "default": {
+      "size_type": "auto",
+      "src": ""
+    }
+  },
+  {
+    "id": "section_title",
+    "name": "section_title",
+    "label": "Section Title",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "Kostenlose Ressourcen"
+  },
+  {
+    "id": "section_description",
+    "name": "section_description",
+    "label": "Section Description",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": "Starten Sie mit unseren bewährten Tools und Checklisten."
+  },
+  {
+    "id": "download_items",
+    "name": "download_items",
+    "label": "Download Items",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "title",
+        "name": "title",
+        "label": "Item Title",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Description",
+        "required": false,
+        "locked": false,
+        "type": "textarea",
+        "default": ""
+      },
+      {
+        "id": "icon",
+        "name": "icon",
+        "label": "Icon (Emoji)",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "📄"
+      },
+      {
+        "id": "type",
+        "name": "type",
+        "label": "File Type",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "PDF"
+      },
+      {
+        "id": "size",
+        "name": "size",
+        "label": "File Size",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "1.0 MB"
+      },
+      {
+        "id": "cta_text",
+        "name": "cta_text",
+        "label": "CTA Button Text",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "Kostenlos downloaden"
+      }
+    ],
+    "default": []
+  },
+  {
+    "id": "newsletter_section",
+    "name": "newsletter_section",
+    "label": "Newsletter Section",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "show",
+        "name": "show",
+        "label": "Show Newsletter Section",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "id": "title",
+        "name": "title",
+        "label": "Newsletter Title",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "Newsletter abonnieren"
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Newsletter Description",
+        "required": false,
+        "locked": false,
+        "type": "textarea",
+        "default": ""
+      },
+      {
+        "id": "placeholder",
+        "name": "placeholder",
+        "label": "Email Placeholder",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "Ihre E-Mail-Adresse"
+      },
+      {
+        "id": "button_text",
+        "name": "button_text",
+        "label": "Button Text",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "Abonnieren"
+      }
+    ]
+  }
+]

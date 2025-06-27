@@ -1,0 +1,108 @@
+
+[
+  {
+    "id": "background_image",
+    "name": "background_image",
+    "label": "Background Image",
+    "required": false,
+    "locked": false,
+    "type": "image",
+    "default": {
+      "size_type": "auto",
+      "src": ""
+    }
+  },
+  {
+    "id": "section_title",
+    "name": "section_title",
+    "label": "Section Title",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "Kennen Sie diese Herausforderungen?"
+  },
+  {
+    "id": "section_description",
+    "name": "section_description",
+    "label": "Section Description",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": "Viele etablierte Unternehmen stehen vor denselben KI-Problemen."
+  },
+  {
+    "id": "painpoints",
+    "name": "painpoints",
+    "label": "Painpoints",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "icon",
+        "name": "icon",
+        "label": "Icon (Emoji or HTML)",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "⚠️"
+      },
+      {
+        "id": "title",
+        "name": "title",
+        "label": "Title",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Description",
+        "required": true,
+        "locked": false,
+        "type": "textarea",
+        "default": ""
+      }
+    ],
+    "default": []
+  },
+  {
+    "id": "solution_box",
+    "name": "solution_box",
+    "label": "Solution Box",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "show",
+        "name": "show",
+        "label": "Show Solution Box",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "default": true
+      },
+      {
+        "id": "title",
+        "name": "title",
+        "label": "Solution Title",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "Die Lösung"
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Solution Description",
+        "required": false,
+        "locked": false,
+        "type": "textarea",
+        "default": ""
+      }
+    ]
+  }
+]

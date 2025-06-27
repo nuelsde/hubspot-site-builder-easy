@@ -1,0 +1,56 @@
+
+[
+  {
+    "id": "brand_name",
+    "name": "brand_name",
+    "label": "Brand Name",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "KI-Transformation"
+  },
+  {
+    "id": "navigation_items",
+    "name": "navigation_items",
+    "label": "Navigation Items",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "text",
+        "name": "text",
+        "label": "Link Text",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "link",
+        "name": "link",
+        "label": "Link URL",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": "#"
+      }
+    ],
+    "default": [
+      {"text": "Herausforderungen", "link": "#painpoints"},
+      {"text": "5 Phasen", "link": "#methodology"},
+      {"text": "Erfolgsgeschichten", "link": "#case-studies"},
+      {"text": "Pakete", "link": "#packages"},
+      {"text": "Downloads", "link": "#downloads"}
+    ]
+  },
+  {
+    "id": "cta_button_text",
+    "name": "cta_button_text",
+    "label": "CTA Button Text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "Termin buchen"
+  }
+]

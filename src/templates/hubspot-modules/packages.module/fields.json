@@ -1,0 +1,113 @@
+
+[
+  {
+    "id": "section_title",
+    "name": "section_title",
+    "label": "Section Title",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "Unsere Pakete"
+  },
+  {
+    "id": "section_description",
+    "name": "section_description",
+    "label": "Section Description",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": "Wählen Sie das passende Paket für Ihre Bedürfnisse."
+  },
+  {
+    "id": "packages",
+    "name": "packages",
+    "label": "Packages",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "name",
+        "name": "name",
+        "label": "Package Name",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "subtitle",
+        "name": "subtitle",
+        "label": "Package Subtitle",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "price",
+        "name": "price",
+        "label": "Price",
+        "required": true,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "duration",
+        "name": "duration",
+        "label": "Duration",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": ""
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Description",
+        "required": false,
+        "locked": false,
+        "type": "textarea",
+        "default": ""
+      },
+      {
+        "id": "features",
+        "name": "features",
+        "label": "Features (one per line)",
+        "required": false,
+        "locked": false,
+        "type": "textarea",
+        "default": ""
+      },
+      {
+        "id": "highlight",
+        "name": "highlight",
+        "label": "Highlight Package",
+        "required": false,
+        "locked": false,
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "id": "highlight_text",
+        "name": "highlight_text",
+        "label": "Highlight Text",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "Beliebtestes Paket"
+      },
+      {
+        "id": "cta_text",
+        "name": "cta_text",
+        "label": "CTA Button Text",
+        "required": false,
+        "locked": false,
+        "type": "text",
+        "default": "Jetzt buchen"
+      }
+    ],
+    "default": []
+  }
+]
