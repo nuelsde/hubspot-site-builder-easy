@@ -1,4 +1,3 @@
-
 [
   {
     "id": "background_image",
@@ -48,13 +47,13 @@
         "default": "Phase 0"
       },
       {
-        "id": "title",
-        "name": "title",
+        "id": "stage_title",
+        "name": "stage_title",
         "label": "Stage Title",
         "required": true,
         "locked": false,
         "type": "text",
-        "default": ""
+        "default": "Stage Title"
       },
       {
         "id": "icon",
@@ -131,8 +130,8 @@
         "default": true
       },
       {
-        "id": "title",
-        "name": "title",
+        "id": "cta_title",
+        "name": "cta_title",
         "label": "CTA Title",
         "required": false,
         "locked": false,
@@ -140,8 +139,8 @@
         "default": "Wo steht Ihr Unternehmen heute?"
       },
       {
-        "id": "description",
-        "name": "description",
+        "id": "cta_description",
+        "name": "cta_description",
         "label": "CTA Description",
         "required": false,
         "locked": false,

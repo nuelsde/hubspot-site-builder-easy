@@ -1,4 +1,3 @@
-
 [
   {
     "id": "section_title",
@@ -33,7 +32,7 @@
         "required": true,
         "locked": false,
         "type": "text",
-        "default": ""
+        "default": "Unternehmensname"
       },
       {
         "id": "industry",
@@ -42,7 +41,7 @@
         "required": false,
         "locked": false,
         "type": "text",
-        "default": ""
+        "default": "Branche"
       },
       {
         "id": "employees",
@@ -51,7 +50,7 @@
         "required": false,
         "locked": false,
         "type": "text",
-        "default": ""
+        "default": "Anzahl Mitarbeiter"
       },
       {
         "id": "challenge",
@@ -74,11 +73,17 @@
       {
         "id": "results",
         "name": "results",
-        "label": "Results (one per line)",
+        "label": "Results",
         "required": false,
         "locked": false,
-        "type": "textarea",
-        "default": ""
+        "type": "list",
+ "children": [
+          {
+            "type": "text",
+            "name": "result",
+            "label": "Result"
+          }
+        ]
       },
       {
         "id": "quote",

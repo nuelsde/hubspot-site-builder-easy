@@ -1,4 +1,3 @@
-
 [
   {
     "id": "brand_name",
@@ -18,17 +17,17 @@
     "type": "group",
     "children": [
       {
-        "id": "text",
-        "name": "text",
+        "id": "link_text",
+        "name": "link_text",
         "label": "Link Text",
         "required": true,
         "locked": false,
         "type": "text",
-        "default": ""
+        "default": "Link"
       },
       {
-        "id": "link",
-        "name": "link",
+        "id": "link_url",
+        "name": "link_url",
         "label": "Link URL",
         "required": true,
         "locked": false,
@@ -37,11 +36,11 @@
       }
     ],
     "default": [
-      {"text": "Herausforderungen", "link": "#painpoints"},
-      {"text": "5 Phasen", "link": "#methodology"},
-      {"text": "Erfolgsgeschichten", "link": "#case-studies"},
-      {"text": "Pakete", "link": "#packages"},
-      {"text": "Downloads", "link": "#downloads"}
+      {"link_text": "Herausforderungen", "link_url": "#painpoints"},
+      {"link_text": "5 Phasen", "link_url": "#methodology"},
+      {"link_text": "Erfolgsgeschichten", "link_url": "#case-studies"},
+      {"link_text": "Pakete", "link_url": "#packages"},
+      {"link_text": "Downloads", "link_url": "#downloads"}
     ]
   },
   {

@@ -1,4 +1,3 @@
-
 [
   {
     "id": "section_title",
@@ -27,13 +26,13 @@
     "type": "group",
     "children": [
       {
-        "id": "name",
-        "name": "name",
+        "id": "package_name",
+        "name": "package_name",
         "label": "Package Name",
         "required": true,
         "locked": false,
         "type": "text",
-        "default": ""
+        "default": "Package Name"
       },
       {
         "id": "subtitle",
@@ -51,7 +50,7 @@
         "required": true,
         "locked": false,
         "type": "text",
-        "default": ""
+        "default": "€"
       },
       {
         "id": "duration",
@@ -74,11 +73,17 @@
       {
         "id": "features",
         "name": "features",
-        "label": "Features (one per line)",
+        "label": "Features",
         "required": false,
         "locked": false,
-        "type": "textarea",
-        "default": ""
+ "type": "list",
+ "children": [
+          {
+            "type": "text",
+            "name": "feature",
+            "label": "Feature"
+          }
+        ]
       },
       {
         "id": "highlight",

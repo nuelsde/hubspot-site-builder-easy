@@ -1,8 +1,7 @@
-
 [
   {
     "id": "background_image",
-    "name": "Background Image",
+    "name": "background_image",
     "label": "Hero Background Image",
     "required": false,
     "locked": false,
@@ -102,8 +101,8 @@
     "type": "group",
     "children": [
       {
-        "id": "number",
-        "name": "number",
+        "id": "stat_number",
+        "name": "stat_number",
         "label": "Statistic Number",
         "required": false,
         "locked": false,
@@ -111,8 +110,8 @@
         "default": ""
       },
       {
-        "id": "label",
-        "name": "label",
+        "id": "stat_label",
+        "name": "stat_label",
         "label": "Statistic Label",
         "required": false,
         "locked": false,
