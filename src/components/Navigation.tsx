@@ -8,10 +8,8 @@ export const Navigation = () => {
 
   const navItems = [
     { name: "Herausforderungen", href: "#painpoints" },
-    { name: "5 Phasen", href: "#methodology" },
+    { name: "Phasenmodell", href: "#methodology" },
     { name: "Erfolgsgeschichten", href: "#case-studies" },
-    { name: "Pakete", href: "#packages" },
-    { name: "Downloads", href: "#downloads" },
   ];
 
   const scrollToSection = (href: string) => {
