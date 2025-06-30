@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ content.html_title }}</title>
+        <meta name="description" content="{{ content.meta_description }}">
+        {{ standard_header_includes }}
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="body-wrapper">
+            {% dnd_area "dnd_main" label="Main Content" %}
+                {% dnd_section %}
+                    {% dnd_module path="../modules/hero.module", label="Hero Section" %}{% end_dnd_module %}
+                {% end_dnd_section %}
+                {% dnd_section %}
+                    {% dnd_module path="../modules/features.module", label="Features Section" %}{% end_dnd_module %}
+                {% end_dnd_section %}
+                {% dnd_section %}
+                    {% dnd_module path="../modules/case-studies.module", label="Case Studies Section" %}{% end_dnd_module %}
+                {% end_dnd_section %}
+                {% dnd_section %}
+                    {% dnd_module path="../modules/testimonials.module", label="Testimonials Section" %}{% end_dnd_module %}
+                {% end_dnd_section %}
+                {% dnd_section %}
+                    {% dnd_module path="../modules/faq.module", label="FAQ Section" %}{% end_dnd_module %}
+                {% end_dnd_section %}
+                {% dnd_section %}
+                    {% dnd_module path="../modules/meeting.module", label="Meeting Section" %}{% end_dnd_module %}
+                {% end_dnd_section %}
+                {% dnd_section %}
+                    {% dnd_module path="../modules/footer.module", label="Footer Section" %}{% end_dnd_module %}
+                {% end_dnd_section %}
+            {% end_dnd_area %}
+        </div>
+        {{ standard_footer_includes }}
+    </body>
+</html>

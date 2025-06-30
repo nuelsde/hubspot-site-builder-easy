@@ -1,0 +1,20 @@
+[
+  { "id": "features_title", "name": "features_title", "label": "Titel", "type": "text", "default": "Unsere Services" },
+  { 
+    "id": "features_group", 
+    "name": "features_group", 
+    "label": "Features", 
+    "type": "group", 
+    "children": [
+      { "id": "icon", "name": "icon", "label": "Icon", "type": "text", "default": "🚀" },
+      { "id": "feature_title", "name": "feature_title", "label": "Titel", "type": "text", "default": "Digitale Transformation" },
+      { "id": "description", "name": "description", "label": "Beschreibung", "type": "textarea", "default": "Modernisieren Sie Ihr Unternehmen." }
+    ], 
+    "default": [
+        { "icon": "🚀", "feature_title": "Digitale Transformation", "description": "Modernisieren Sie Ihr Unternehmen."},
+        { "icon": "🎯", "feature_title": "Strategische Beratung", "description": "Entwickeln Sie mit uns eine maßgeschneiderte Strategie."},
+        { "icon": "🤝", "feature_title": "Team Development", "description": "Stärken Sie Ihr Team durch professionelle Schulungen."},
+        { "icon": "⚡️", "feature_title": "Process Optimization", "description": "Optimieren Sie Ihre Geschäftsprozesse."}
+    ] 
+  }
+]

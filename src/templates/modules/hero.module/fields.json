@@ -1,0 +1,5 @@
+[
+  { "id": "hero_title", "name": "hero_title", "label": "Titel", "type": "text", "default": "Von KI-Unsicherheit zu KI-Innovation" },
+  { "id": "hero_subtitle", "name": "hero_subtitle", "label": "Untertitel", "type": "textarea", "default": "Unser bewährtes 5-Phasen-Vorgehensmodell." },
+  { "id": "hero_button_text", "name": "hero_button_text", "label": "Button Text", "type": "text", "default": "Kostenlose Potenzialanalyse" }
+]

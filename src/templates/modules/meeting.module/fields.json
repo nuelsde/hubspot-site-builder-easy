@@ -1,0 +1,4 @@
+[
+  { "id": "meeting_title", "name": "meeting_title", "label": "Titel", "type": "text", "default": "Gespräch buchen" },
+  { "id": "form_id", "name": "form_id", "label": "HubSpot Form ID", "type": "text", "help_text": "Geben Sie hier die ID Ihres HubSpot Formulars ein." }
+]

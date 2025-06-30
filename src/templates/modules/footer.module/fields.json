@@ -1,0 +1,3 @@
+[
+  { "id": "copyright_text", "name": "copyright_text", "label": "Copyright", "type": "text", "default": "© 2024 Ihr Unternehmen. Alle Rechte vorbehalten." }
+]
