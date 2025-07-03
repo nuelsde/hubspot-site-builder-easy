@@ -1,10 +1,23 @@
+
 {
   "label": "KI-Transformation Theme",
-  "preview_path": "./templates/landing-page.html",
+  "preview_path": "./ki-transformation.html",
+  "screenshot_path": "./images/template-preview.png",
   "template_type": "page",
   "is_available_for_new_content": true,
-  "description": "Ein flexibles Theme zur Erstellung von allgemeinen Websites.",
+  "host_template_types": ["LANDING_PAGE", "WEBSITE_PAGE"],
+  "description": "Professionelles KI-Transformation Landing Page Template mit vollständig anpassbaren Modulen",
   "category": "business",
-  "version": "4.0",
-  "author": { "name": "AI Assistant" }
+  "version": "1.0.0",
+  "author": {
+    "name": "KI-Transformation",
+    "email": "contact@ki-transformation.de",
+    "url": "https://ki-transformation.de"
+  },
+  "enable_domain_stylesheets": false,
+  "path": "./",
+  "css_render_options": {
+    "async": false,
+    "defer": false
+  }
 }

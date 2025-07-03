@@ -1,3 +1,95 @@
+
 [
-  { "id": "copyright_text", "name": "copyright_text", "label": "Copyright", "type": "text", "default": "© 2024 Ihr Unternehmen. Alle Rechte vorbehalten." }
+  {
+    "id": "company_name",
+    "name": "company_name",
+    "label": "Company Name",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "KI-Transformation"
+  },
+  {
+    "id": "company_description",
+    "name": "company_description",
+    "label": "Company Description",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": "Ihr Experte für systematische KI-Transformation. Von der Unklarheit zum Innovationstreiber."
+  },
+  {
+    "id": "services",
+    "name": "services",
+    "label": "Services",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "name",
+        "name": "name",
+        "label": "Service Name",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "id": "link",
+        "name": "link",
+        "label": "Service Link",
+        "required": false,
+        "type": "link"
+      }
+    ],
+    "default": [
+      {
+        "name": "5-Stufen-Modell",
+        "link": { "href": "#methodology" }
+      },
+      {
+        "name": "KI-Standortbestimmung",
+        "link": { "href": "#packages" }
+      },
+      {
+        "name": "KI-Transformation",
+        "link": { "href": "#packages" }
+      }
+    ]
+  },
+  {
+    "id": "phone",
+    "name": "phone",
+    "label": "Phone Number",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "+49 (0) 123 456 789"
+  },
+  {
+    "id": "email",
+    "name": "email",
+    "label": "Email Address",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "ki@transformation.de"
+  },
+  {
+    "id": "address",
+    "name": "address",
+    "label": "Address",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": "Musterstraße 123\n12345 München"
+  },
+  {
+    "id": "copyright_text",
+    "name": "copyright_text",
+    "label": "Copyright Text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "© 2024 KI-Transformation. Alle Rechte vorbehalten."
+  }
 ]

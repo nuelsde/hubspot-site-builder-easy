@@ -1,0 +1,85 @@
+
+[
+  {
+    "id": "brand_name",
+    "name": "brand_name",
+    "label": "Brand Name",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "KI-Transformation"
+  },
+  {
+    "id": "logo_image",
+    "name": "logo_image",
+    "label": "Logo Image",
+    "required": false,
+    "locked": false,
+    "type": "image",
+    "help_text": "Upload your logo image (optional)"
+  },
+  {
+    "id": "nav_items",
+    "name": "nav_items",
+    "label": "Navigation Items",
+    "required": false,
+    "locked": false,
+    "type": "group",
+    "children": [
+      {
+        "id": "link_text",
+        "name": "link_text",
+        "label": "Link Text",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "id": "link",
+        "name": "link",
+        "label": "Link",
+        "required": true,
+        "type": "link"
+      }
+    ],
+    "default": [
+      {
+        "link_text": "Herausforderungen",
+        "link": {
+          "href": "#painpoints"
+        }
+      },
+      {
+        "link_text": "Phasenmodell",
+        "link": {
+          "href": "#methodology"
+        }
+      },
+      {
+        "link_text": "Erfolgsgeschichten",
+        "link": {
+          "href": "#case-studies"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cta_button_text",
+    "name": "cta_button_text",
+    "label": "CTA Button Text",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "default": "Termin buchen"
+  },
+  {
+    "id": "cta_button_link",
+    "name": "cta_button_link",
+    "label": "CTA Button Link",
+    "required": false,
+    "locked": false,
+    "type": "link",
+    "default": {
+      "href": "#meeting"
+    }
+  }
+]

@@ -1,1 +1,21 @@
-<section id="meeting" class="py-20 px-4 bg-blue-600 text-white"><div class="max-w-2xl mx-auto text-center"><h2 class="text-3xl font-bold mb-4">{{ module.meeting_title }}</h2><div class="bg-white rounded-lg p-8 text-slate-800">{% if module.form_id %}{% form form_id="{{ module.form_id }}" %}{% else %}<p>Bitte geben Sie eine HubSpot Form ID in den Modul-Einstellungen ein.</p>{% endif %}</div></div></section>
+
+<section id="meeting" class="section bg-primary" style="color: white;">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 style="color: white;">{{ module.title }}</h2>
+      {% if module.subtitle %}
+        <p style="font-size: 1.1rem; margin-bottom: 2rem;">{{ module.subtitle }}</p>
+      {% endif %}
+    </div>
+    
+    <div style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px;">
+      {% if module.hubspot_form_id %}
+        {% form form_id="{{ module.hubspot_form_id }}" %}
+      {% else %}
+        <div style="text-align: center; color: #666;">
+          <p>Bitte geben Sie eine HubSpot Form ID in den Modul-Einstellungen ein.</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

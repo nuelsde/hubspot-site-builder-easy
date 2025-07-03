@@ -1,4 +1,30 @@
+
 [
-  { "id": "meeting_title", "name": "meeting_title", "label": "Titel", "type": "text", "default": "Gespräch buchen" },
-  { "id": "form_id", "name": "form_id", "label": "HubSpot Form ID", "type": "text", "help_text": "Geben Sie hier die ID Ihres HubSpot Formulars ein." }
+  {
+    "id": "title",
+    "name": "title",
+    "label": "Section Title",
+    "required": true,
+    "locked": false,
+    "type": "text",
+    "default": "Kostenloses Beratungsgespräch buchen"
+  },
+  {
+    "id": "subtitle",
+    "name": "subtitle",
+    "label": "Section Subtitle",
+    "required": false,
+    "locked": false,
+    "type": "textarea",
+    "default": "Lassen Sie uns gemeinsam Ihre KI-Potenziale entdecken und den ersten Schritt in Richtung digitale Transformation gehen."
+  },
+  {
+    "id": "hubspot_form_id",
+    "name": "hubspot_form_id",
+    "label": "HubSpot Form ID",
+    "required": false,
+    "locked": false,
+    "type": "text",
+    "help_text": "Geben Sie hier die ID Ihres HubSpot Formulars ein, das für Terminbuchungen verwendet werden soll."
+  }
 ]

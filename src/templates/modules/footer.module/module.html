@@ -1,1 +1,40 @@
-<footer class="bg-gray-900 text-white py-12 px-4 text-center"><p class="text-gray-400">{{ module.copyright_text }}</p></footer>
+
+<footer class="footer">
+  <div class="container">
+    <div class="grid grid-3 mb-4">
+      <div>
+        <h4>{{ module.company_name }}</h4>
+        <p>{{ module.company_description }}</p>
+      </div>
+      
+      <div>
+        <h4>Services</h4>
+        <ul style="list-style: none;">
+          {% for service in module.services %}
+            <li style="margin-bottom: 0.5rem;">
+              <a href="{{ service.link.href }}">{{ service.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <div>
+        <h4>Kontakt</h4>
+        <div style="margin-bottom: 0.5rem;">
+          <strong>Telefon:</strong> {{ module.phone }}
+        </div>
+        <div style="margin-bottom: 0.5rem;">
+          <strong>E-Mail:</strong> {{ module.email }}
+        </div>
+        <div>
+          <strong>Adresse:</strong><br>
+          {{ module.address }}
+        </div>
+      </div>
+    </div>
+    
+    <div style="border-top: 1px solid #555; padding-top: 2rem; text-align: center;">
+      <p>{{ module.copyright_text }}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,249 @@
+
+/* KI-Transformation Theme Styles */
+:root {
+  --brand-primary: #073450;
+  --brand-secondary: #ef7c01;
+  --brand-text: #333333;
+  --brand-light: #f8f9fa;
+  --brand-white: #ffffff;
+  --brand-gray-100: #f8f9fa;
+  --brand-gray-200: #e9ecef;
+  --brand-gray-300: #dee2e6;
+  --brand-gray-600: #6c757d;
+  --brand-gray-800: #343a40;
+  --brand-gray-900: #212529;
+}
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--brand-text);
+  background-color: var(--brand-white);
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--brand-gray-200);
+  z-index: 1000;
+  padding: 1rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--brand-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--brand-secondary);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: var(--brand-white);
+}
+
+.btn-primary:hover {
+  background-color: #0a4a6b;
+}
+
+.btn-secondary {
+  background-color: var(--brand-secondary);
+  color: var(--brand-white);
+}
+
+.btn-secondary:hover {
+  background-color: #d16801;
+}
+
+/* Section Styles */
+.section {
+  padding: 4rem 0;
+}
+
+.section-hero {
+  padding: 8rem 0 4rem;
+  background: linear-gradient(135deg, var(--brand-light) 0%, var(--brand-white) 100%);
+  text-align: center;
+}
+
+.section-alt {
+  background-color: var(--brand-gray-100);
+}
+
+/* Card Styles */
+.card {
+  background: var(--brand-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Grid Styles */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--brand-primary);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--brand-gray-900);
+  color: var(--brand-white);
+  padding: 3rem 0 1rem;
+}
+
+.footer h4 {
+  color: var(--brand-white);
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: var(--brand-gray-300);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--brand-secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .section {
+    padding: 2rem 0;
+  }
+  
+  .section-hero {
+    padding: 6rem 0 2rem;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--brand-primary);
+}
+
+.text-secondary {
+  color: var(--brand-secondary);
+}
+
+.bg-primary {
+  background-color: var(--brand-primary);
+}
+
+.bg-secondary {
+  background-color: var(--brand-secondary);
+}
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
