@@ -1,0 +1,82 @@
+
+[
+  {
+    "id": "painpoints_title",
+    "name": "painpoints_title",
+    "label": "Titel",
+    "type": "text",
+    "default": "Kennen Sie diese Herausforderungen?"
+  },
+  {
+    "id": "painpoints_subtitle",
+    "name": "painpoints_subtitle",
+    "label": "Untertitel",
+    "type": "textarea",
+    "default": "Viele etablierte Unternehmen stehen vor denselben KI-Problemen. Sie sind nicht allein – aber Sie müssen jetzt handeln."
+  },
+  {
+    "id": "painpoints_group",
+    "name": "painpoints_group",
+    "label": "Herausforderungen",
+    "type": "group",
+    "children": [
+      {
+        "id": "icon",
+        "name": "icon",
+        "label": "Icon",
+        "type": "text",
+        "default": "⚠️"
+      },
+      {
+        "id": "title",
+        "name": "title",
+        "label": "Titel",
+        "type": "text",
+        "default": "KI-Unsicherheit lähmt"
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Beschreibung",
+        "type": "textarea",
+        "default": "Ihre Mitarbeiter haben Angst vor KI oder nutzen sie unkontrolliert."
+      }
+    ],
+    "default": [
+      {
+        "icon": "⚠️",
+        "title": "KI-Unsicherheit lähmt",
+        "description": "Ihre Mitarbeiter haben Angst vor KI oder nutzen sie unkontrolliert."
+      },
+      {
+        "icon": "⏰",
+        "title": "Zeitverschwendung durch Tool-Hopping",
+        "description": "Ständig neue KI-Tools, aber keine nachhaltigen Ergebnisse."
+      },
+      {
+        "icon": "👥",
+        "title": "Mitarbeiter werden abgehängt",
+        "description": "Während die Konkurrenz KI nutzt, bleiben Ihre Prozesse ineffizient."
+      },
+      {
+        "icon": "📉",
+        "title": "Wettbewerbsnachteil droht",
+        "description": "Unternehmen mit systematischer KI-Nutzung überholen Sie."
+      }
+    ]
+  },
+  {
+    "id": "solution_title",
+    "name": "solution_title",
+    "label": "Lösungs-Titel",
+    "type": "text",
+    "default": "Die Lösung: Systematische KI-Transformation"
+  },
+  {
+    "id": "solution_text",
+    "name": "solution_text",
+    "label": "Lösungs-Text",
+    "type": "textarea",
+    "default": "Unser 5-Phasen-Modell bringt Klarheit in das KI-Chaos und macht Ihr Unternehmen systematisch fit für die KI-Zukunft."
+  }
+]

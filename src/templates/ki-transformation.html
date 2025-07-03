@@ -1,73 +1,60 @@
 
-<!--
-  templateType: page
-  isAvailableForNewContent: true
-  label: KI-Transformation Landing Page
-  screenshotPath: ./images/template-preview.png
--->
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="{{ page_meta.html_lang }}">
 <head>
-  <meta charset="utf-8">
-  <title>{% if content.html_title %}{{ content.html_title }}{% else %}{{ page_meta.name }}{% endif %}</title>
-  {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}">{% endif %}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {{ standard_header_includes }}
-  
-  <!-- HubSpot Performance Tags -->
-  {% require_head %}
-  <link rel="stylesheet" href="{{ get_asset_url('./css/main.css') }}">
-  {% end_require_head %}
+    <meta charset="utf-8">
+    <title>{% if page_meta.name %}{{ page_meta.name }}{% endif %}</title>
+    <meta name="description" content="{% if page_meta.meta_description %}{{ page_meta.meta_description }}{% endif %}">
+    <meta name="author" content="KI-Transformation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    {{ require_css(get_asset_url("./css/main.css")) }}
+    
+    <!-- HubSpot Standard Header -->
+    {{ standard_header_includes }}
 </head>
 <body>
-  {{ standard_body_includes }}
-  
-  <div class="body-container-wrapper">
-    <div class="body-container container-fluid">
-      {% dnd_area "dnd_area" label="Main content" %}
-        {% dnd_section %}
-          {% dnd_module path="./modules/navigation.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/hero.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/painpoints.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/methodology.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/case-studies.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/packages.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/downloads.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/meeting.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-        
-        {% dnd_section %}
-          {% dnd_module path="./modules/footer.module" %}{% end_dnd_module %}
-        {% end_dnd_section %}
-      {% end_dnd_area %}
-    </div>
-  </div>
-  
-  {% require_js %}
-  <script src="{{ get_asset_url('./js/main.js') }}"></script>
-  {% end_require_js %}
-  
-  {{ standard_footer_includes }}
+    <!-- Navigation -->
+    {% module "navigation" path="./modules/navigation.module" %}
+    
+    <!-- Hero Section -->
+    {% module "hero" path="./modules/hero.module" %}
+    
+    <!-- Painpoints Section -->
+    {% module "painpoints" path="./modules/painpoints.module" %}
+    
+    <!-- Features Section -->
+    {% module "features" path="./modules/features.module" %}
+    
+    <!-- Methodology Section -->
+    {% module "methodology" path="./modules/methodology.module" %}
+    
+    <!-- Case Studies Section -->
+    {% module "case_studies" path="./modules/case-studies.module" %}
+    
+    <!-- Packages Section -->
+    {% module "packages" path="./modules/packages.module" %}
+    
+    <!-- Testimonials Section -->
+    {% module "testimonials" path="./modules/testimonials.module" %}
+    
+    <!-- Downloads Section -->
+    {% module "downloads" path="./modules/downloads.module" %}
+    
+    <!-- FAQ Section -->
+    {% module "faq" path="./modules/faq.module" %}
+    
+    <!-- Meeting Section -->
+    {% module "meeting" path="./modules/meeting.module" %}
+    
+    <!-- Footer -->
+    {% module "footer" path="./modules/footer.module" %}
+    
+    <!-- JavaScript -->
+    {{ require_js(get_asset_url("./js/main.js")) }}
+    
+    <!-- HubSpot Standard Footer -->
+    {{ standard_footer_includes }}
 </body>
 </html>

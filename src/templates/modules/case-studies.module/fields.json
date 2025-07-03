@@ -1,10 +1,54 @@
+
 [
-  { "id": "casestudies_title", "name": "casestudies_title", "label": "Titel", "type": "text", "default": "Erfolgsgeschichten" },
-  { "id": "studies", "name": "studies", "label": "Fallstudien", "type": "group", "children": [
-      { "id": "company", "name": "company", "label": "Firma", "type": "text", "default": "Musterfirma GmbH" },
-      { "id": "challenge", "name": "challenge", "label": "Herausforderung", "type": "textarea", "default": "Lange Wartezeiten." },
-      { "id": "solution", "name": "solution", "label": "Lösung", "type": "textarea", "default": "Prozesse automatisiert." },
-      { "id": "quote", "name": "quote", "label": "Zitat", "type": "textarea", "default": "Exzellent!" }
-    ], "default": [{}] 
+  {
+    "id": "casestudies_title",
+    "name": "casestudies_title",
+    "label": "Titel",
+    "type": "text",
+    "default": "Erfolgsgeschichten"
+  },
+  {
+    "id": "studies",
+    "name": "studies",
+    "label": "Fallstudien",
+    "type": "group",
+    "children": [
+      {
+        "id": "company",
+        "name": "company",
+        "label": "Firma",
+        "type": "text",
+        "default": "Musterfirma GmbH"
+      },
+      {
+        "id": "challenge",
+        "name": "challenge",
+        "label": "Herausforderung",
+        "type": "textarea",
+        "default": "Lange Wartezeiten."
+      },
+      {
+        "id": "solution",
+        "name": "solution",
+        "label": "Lösung",
+        "type": "textarea",
+        "default": "Prozesse automatisiert."
+      },
+      {
+        "id": "quote",
+        "name": "quote",
+        "label": "Zitat",
+        "type": "textarea",
+        "default": "Exzellent!"
+      }
+    ],
+    "default": [
+      {
+        "company": "Musterfirma GmbH",
+        "challenge": "Lange Wartezeiten.",
+        "solution": "Prozesse automatisiert.",
+        "quote": "Exzellent!"
+      }
+    ]
   }
 ]

@@ -1,8 +1,38 @@
+
 [
-  { "id": "faq_title", "name": "faq_title", "label": "Titel", "type": "text", "default": "Häufig gestellte Fragen" },
-  { "id": "faq_group", "name": "faq_group", "label": "FAQs", "type": "group", "children": [
-      { "id": "question", "name": "question", "label": "Frage", "type": "text", "default": "Was ist der erste Schritt?" },
-      { "id": "answer", "name": "answer", "label": "Antwort", "type": "richtext", "default": "<p>Eine kostenlose Potenzialanalyse.</p>" }
-    ], "default": [{}] 
+  {
+    "id": "faq_title",
+    "name": "faq_title",
+    "label": "Titel",
+    "type": "text",
+    "default": "Häufig gestellte Fragen"
+  },
+  {
+    "id": "faq_group",
+    "name": "faq_group",
+    "label": "FAQs",
+    "type": "group",
+    "children": [
+      {
+        "id": "question",
+        "name": "question",
+        "label": "Frage",
+        "type": "text",
+        "default": "Was ist der erste Schritt?"
+      },
+      {
+        "id": "answer",
+        "name": "answer",
+        "label": "Antwort",
+        "type": "richtext",
+        "default": "<p>Eine kostenlose Potenzialanalyse.</p>"
+      }
+    ],
+    "default": [
+      {
+        "question": "Was ist der erste Schritt?",
+        "answer": "<p>Eine kostenlose Potenzialanalyse.</p>"
+      }
+    ]
   }
 ]

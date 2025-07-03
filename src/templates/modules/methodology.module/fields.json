@@ -1,0 +1,69 @@
+
+[
+  {
+    "id": "methodology_title",
+    "name": "methodology_title",
+    "label": "Titel",
+    "type": "text",
+    "default": "Unser 5-Phasen-Modell"
+  },
+  {
+    "id": "methodology_subtitle",
+    "name": "methodology_subtitle",
+    "label": "Untertitel",
+    "type": "textarea",
+    "default": "Systematisch von KI-Unsicherheit zu messbarem Erfolg"
+  },
+  {
+    "id": "phases",
+    "name": "phases",
+    "label": "Phasen",
+    "type": "group",
+    "children": [
+      {
+        "id": "number",
+        "name": "number",
+        "label": "Nummer",
+        "type": "text",
+        "default": "1"
+      },
+      {
+        "id": "title",
+        "name": "title",
+        "label": "Titel",
+        "type": "text",
+        "default": "KI-Standortbestimmung"
+      },
+      {
+        "id": "description",
+        "name": "description",
+        "label": "Beschreibung",
+        "type": "textarea",
+        "default": "Wo stehen Sie heute mit KI?"
+      },
+      {
+        "id": "activities",
+        "name": "activities",
+        "label": "Aktivitäten",
+        "type": "text",
+        "default": "Ist-Analyse,Potenzial-Assessment,Quick-Wins identifizieren"
+      },
+      {
+        "id": "results",
+        "name": "results",
+        "label": "Ergebnisse",
+        "type": "text",
+        "default": "KI-Reifegrad,Handlungsempfehlungen,Prioritätenliste"
+      }
+    ],
+    "default": [
+      {
+        "number": "1",
+        "title": "KI-Standortbestimmung",
+        "description": "Wo stehen Sie heute mit KI?",
+        "activities": "Ist-Analyse,Potenzial-Assessment,Quick-Wins identifizieren",
+        "results": "KI-Reifegrad,Handlungsempfehlungen,Prioritätenliste"
+      }
+    ]
+  }
+]
