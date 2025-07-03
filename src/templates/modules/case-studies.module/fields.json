@@ -8,8 +8,8 @@
     "default": "Erfolgsgeschichten"
   },
   {
-    "id": "studies",
-    "name": "studies",
+    "id": "case_studies",
+    "name": "case_studies",
     "label": "Fallstudien",
     "type": "group",
     "children": [

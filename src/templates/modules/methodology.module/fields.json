@@ -45,15 +45,15 @@
         "id": "activities",
         "name": "activities",
         "label": "Aktivitäten",
-        "type": "text",
-        "default": "Ist-Analyse,Potenzial-Assessment,Quick-Wins identifizieren"
+        "type": "textarea",
+        "default": "Ist-Analyse, Potenzial-Assessment, Quick-Wins identifizieren"
       },
       {
         "id": "results",
         "name": "results",
         "label": "Ergebnisse",
-        "type": "text",
-        "default": "KI-Reifegrad,Handlungsempfehlungen,Prioritätenliste"
+        "type": "textarea",
+        "default": "KI-Reifegrad, Handlungsempfehlungen, Prioritätenliste"
       }
     ],
     "default": [
@@ -61,8 +61,8 @@
         "number": "1",
         "title": "KI-Standortbestimmung",
         "description": "Wo stehen Sie heute mit KI?",
-        "activities": "Ist-Analyse,Potenzial-Assessment,Quick-Wins identifizieren",
-        "results": "KI-Reifegrad,Handlungsempfehlungen,Prioritätenliste"
+        "activities": "Ist-Analyse, Potenzial-Assessment, Quick-Wins identifizieren",
+        "results": "KI-Reifegrad, Handlungsempfehlungen, Prioritätenliste"
       }
     ]
   }

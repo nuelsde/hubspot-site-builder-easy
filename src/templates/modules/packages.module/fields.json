@@ -52,8 +52,8 @@
         "id": "features",
         "name": "features",
         "label": "Features",
-        "type": "text",
-        "default": "KI-Potenzialanalyse,Workshop,Roadmap"
+        "type": "textarea",
+        "default": "KI-Potenzialanalyse, Workshop, Roadmap"
       },
       {
         "id": "cta_text",
@@ -76,7 +76,7 @@
         "price": "€2.999",
         "duration": "2 Wochen",
         "description": "Der ideale Einstieg in die KI-Welt",
-        "features": "KI-Potenzialanalyse,Workshop,Roadmap",
+        "features": "KI-Potenzialanalyse, Workshop, Roadmap",
         "cta_text": "Jetzt starten",
         "cta_link": "#meeting"
       }
