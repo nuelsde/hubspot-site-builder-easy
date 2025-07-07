@@ -61,29 +61,10 @@ export const HubSpotMeeting = () => {
               </CardHeader>
               <CardContent>
                 {/* HubSpot Meeting Widget - Replace with actual HubSpot embed code */}
-                <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                  <Video className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                  <h4 className="text-lg font-semibold text-gray-700 mb-2">
-                    HubSpot Meeting Widget
-                  </h4>
-                  <p className="text-gray-600 mb-4">
-                    Hier wird das HubSpot Meeting-Widget eingebettet
-                  </p>
-                  <div className="bg-brand-secondary text-white px-6 py-3 rounded-lg inline-block">
-                    <strong>Integration erforderlich:</strong><br />
-                    HubSpot Meeting Link einfügen
-                  </div>
-                </div>
-                
-                {/* Alternative: Direct booking button */}
-                <div className="mt-6 text-center">
-                  <button className="w-full bg-brand-secondary hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                    Jetzt Termin buchen
-                  </button>
-                  <p className="text-xs text-gray-500 mt-2">
-                    Sichere Terminbuchung über HubSpot
-                  </p>
-                </div>
+                <!-- Start of Meetings Embed Script -->
+    <div class="meetings-iframe-container" data-src="https://www.merkur-impulse.com/meetings/nschadewald?embed=true"></div>
+    <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+  <!-- End of Meetings Embed Script -->
               </CardContent>
             </Card>
           </div>
