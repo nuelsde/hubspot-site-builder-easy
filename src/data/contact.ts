@@ -1,21 +1,21 @@
 
 export const contactData = {
-  companyName: "KI-Transformation GmbH",
+  companyName: "MERKUR Impulse GmbH",
   address: {
-    street: "Musterstraße 123",
-    postalCode: "12345",
-    city: "München",
+    street: "Lanker Str. 34",
+    postalCode: "40545",
+    city: "Düsseldorf",
     country: "Deutschland"
   },
   contact: {
-    phone: "+49 (0) 123 456 789",
-    email: "ki@transformation.de",
-    website: "www.ki-transformation.de"
+    phone: "+49 (0) 211 8386 737",
+    email: "kontakt@merkur-impulse.com",
+    website: "www.merkur-impulse.com"
   },
   legal: {
-    managing_director: "Max Mustermann",
-    register_court: "Amtsgericht München",
-    register_number: "HRB 123456",
-    vat_id: "DE123456789"
+    managing_director: "Nils Schadewald",
+    register_court: "Amtsgericht Düsseldorf",
+    register_number: "HRB 107820",
+    vat_id: "DE 814 749 348"
   }
 };
