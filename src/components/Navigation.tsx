@@ -24,9 +24,15 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-brand-primary">
-              KI-<span className="text-brand-secondary">Transformation</span>
-            </h1>
+            <img 
+              src="/lovable-uploads/fbe52cdf-232d-42be-8493-9c39364c08ab.png" 
+              alt="MERKUR IMPULSE"
+              className="h-10 w-auto object-contain"
+              style={{
+                objectPosition: 'center',
+                clipPath: 'inset(15% 0 15% 0)'
+              }}
+            />
           </div>
 
           {/* Desktop Menu */}
