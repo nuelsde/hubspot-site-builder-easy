@@ -27,10 +27,10 @@ export const Navigation = () => {
             <img 
               src="/lovable-uploads/fbe52cdf-232d-42be-8493-9c39364c08ab.png" 
               alt="MERKUR IMPULSE"
-              className="h-10 w-auto object-contain"
+              className="h-16 w-auto object-cover"
               style={{
                 objectPosition: 'center',
-                clipPath: 'inset(15% 0 15% 0)'
+                clipPath: 'inset(30px 0 30px 0)'
               }}
             />
           </div>
