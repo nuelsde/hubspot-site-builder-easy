@@ -1,8 +1,26 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar, Clock, CheckCircle, Video } from "lucide-react";
+import { Calendar, Clock, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
 
 export const HubSpotMeeting = () => {
+  useEffect(() => {
+    // Load HubSpot Meetings Embed Script
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script on component unmount
+      const existingScript = document.querySelector('script[src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+    };
+  }, []);
+
   return (
     <section id="meeting" className="py-20 px-4 sm:px-6 lg:px-8 bg-brand-primary text-white">
       <div className="max-w-7xl mx-auto">
@@ -60,30 +78,12 @@ export const HubSpotMeeting = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                {/* HubSpot Meeting Widget - Replace with actual HubSpot embed code */}
-                <div className="bg-gray-50 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-                  <Video className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                  <h4 className="text-lg font-semibold text-gray-700 mb-2">
-                    HubSpot Meeting Widget
-                  </h4>
-                  <p className="text-gray-600 mb-4">
-                    Hier wird das HubSpot Meeting-Widget eingebettet
-                  </p>
-                  <div className="bg-brand-secondary text-white px-6 py-3 rounded-lg inline-block">
-                    <strong>Integration erforderlich:</strong><br />
-                    HubSpot Meeting Link einfügen
-                  </div>
-                </div>
-                
-                {/* Alternative: Direct booking button */}
-                <div className="mt-6 text-center">
-                  <button className="w-full bg-brand-secondary hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-                    Jetzt Termin buchen
-                  </button>
-                  <p className="text-xs text-gray-500 mt-2">
-                    Sichere Terminbuchung über HubSpot
-                  </p>
-                </div>
+                {/* HubSpot Meeting Widget */}
+                <div 
+                  className="meetings-iframe-container" 
+                  data-src="https://www.merkur-impulse.com/meetings/nschadewald?embed=true"
+                  style={{ minHeight: '600px' }}
+                ></div>
               </CardContent>
             </Card>
           </div>
