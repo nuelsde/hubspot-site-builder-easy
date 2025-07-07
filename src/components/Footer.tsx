@@ -1,5 +1,6 @@
 
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { contactData } from "../data/contact";
 
 export const Footer = () => {
   return (
@@ -37,21 +38,24 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info - now using contactData */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-3">
               <div className="flex items-center text-gray-300">
                 <Phone size={16} className="mr-2" />
-                <span>+49 (0) 123 456 789</span>
+                <span>{contactData.contact.phone}</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Mail size={16} className="mr-2" />
-                <span>ki@transformation.de</span>
+                <span>{contactData.contact.email}</span>
               </div>
               <div className="flex items-start text-gray-300">
                 <MapPin size={16} className="mr-2 mt-1" />
-                <span>Musterstraße 123<br />12345 München</span>
+                <span>
+                  {contactData.address.street}<br />
+                  {contactData.address.postalCode} {contactData.address.city}
+                </span>
               </div>
             </div>
           </div>
@@ -63,9 +67,9 @@ export const Footer = () => {
               © 2024 KI-Transformation. Alle Rechte vorbehalten.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Datenschutz</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">Impressum</a>
-              <a href="#" className="text-gray-400 hover:text-white text-sm">AGB</a>
+              <a href="/datenschutz" className="text-gray-400 hover:text-white text-sm">Datenschutz</a>
+              <a href="/impressum" className="text-gray-400 hover:text-white text-sm">Impressum</a>
+              <a href="/agb" className="text-gray-400 hover:text-white text-sm">AGB</a>
             </div>
           </div>
         </div>
