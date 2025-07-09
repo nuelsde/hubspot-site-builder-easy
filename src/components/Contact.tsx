@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { contactData } from "../data/contact";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -123,15 +124,19 @@ export const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Phone className="h-6 w-6 mr-4" />
-                    <span>+49 (0) 123 456 789</span>
+                    <span>{contactData.contact.phone}</span>
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-6 w-6 mr-4" />
-                    <span>info@businesspro.de</span>
+                    <span>{contactData.contact.email}</span>
                   </div>
                   <div className="flex items-center">
                     <MapPin className="h-6 w-6 mr-4" />
-                    <span>Musterstraße 123<br />12345 Berlin</span>
+                    <span>
+                      {contactData.address.street}
+                      <br />
+                      {contactData.address.postalCode} {contactData.address.city}
+                    </span>
                   </div>
                 </div>
               </CardContent>
