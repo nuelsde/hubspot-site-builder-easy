@@ -16,38 +16,38 @@
     "label": "Phasen",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "number": {
+    "children": [
+      {
         "name": "number",
         "label": "Nummer",
         "type": "text",
         "default": "1"
       },
-      "title": {
+      {
         "name": "title",
         "label": "Titel",
         "type": "text",
         "default": "KI-Standortbestimmung"
       },
-      "description": {
+      {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Wo stehen Sie heute mit KI?"
       },
-      "activities": {
+      {
         "name": "activities",
         "label": "Aktivitäten",
         "type": "textarea",
         "default": "Ist-Analyse, Potenzial-Assessment, Quick-Wins identifizieren"
       },
-      "results": {
+      {
         "name": "results",
         "label": "Ergebnisse",
         "type": "textarea",
         "default": "KI-Reifegrad, Handlungsempfehlungen, Prioritätenliste"
       }
-    },
+    ],
     "default": [
       {
         "number": "1",

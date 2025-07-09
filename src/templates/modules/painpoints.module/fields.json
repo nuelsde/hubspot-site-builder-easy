@@ -16,26 +16,26 @@
     "label": "Herausforderungen",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "icon": {
+    "children": [
+      {
         "name": "icon",
         "label": "Icon",
         "type": "text",
         "default": "⚠️"
       },
-      "title": {
+      {
         "name": "title",
         "label": "Titel",
         "type": "text",
         "default": "KI-Unsicherheit lähmt"
       },
-      "description": {
+      {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Ihre Mitarbeiter haben Angst vor KI oder nutzen sie unkontrolliert."
       }
-    },
+    ],
     "default": [
       {
         "icon": "⚠️",

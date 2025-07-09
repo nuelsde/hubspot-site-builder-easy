@@ -16,38 +16,38 @@
     "label": "Downloads",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "icon": {
+    "children": [
+      {
         "name": "icon",
         "label": "Icon",
         "type": "text",
         "default": "📋"
       },
-      "title": {
+      {
         "name": "title",
         "label": "Titel",
         "type": "text",
         "default": "KI-Readiness Check"
       },
-      "description": {
+      {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Bewerten Sie den KI-Reifegrad Ihres Unternehmens"
       },
-      "cta_text": {
+      {
         "name": "cta_text",
         "label": "Button Text",
         "type": "text",
         "default": "Kostenlos herunterladen"
       },
-      "download_link": {
+      {
         "name": "download_link",
         "label": "Download Link",
         "type": "text",
         "default": "#"
       }
-    },
+    ],
     "default": [
       {
         "icon": "📋",

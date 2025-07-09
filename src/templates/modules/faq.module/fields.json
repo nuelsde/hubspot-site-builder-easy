@@ -10,20 +10,20 @@
     "label": "FAQs",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "question": {
+    "children": [
+      {
         "name": "question",
         "label": "Frage",
         "type": "text",
         "default": "Was ist der erste Schritt?"
       },
-      "answer": {
+      {
         "name": "answer",
         "label": "Antwort",
         "type": "richtext",
         "default": "<p>Eine kostenlose Potenzialanalyse.</p>"
       }
-    },
+    ],
     "default": [
       {
         "question": "Was ist der erste Schritt?",

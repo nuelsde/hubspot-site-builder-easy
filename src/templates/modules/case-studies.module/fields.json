@@ -10,32 +10,32 @@
     "label": "Fallstudien",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "company": {
+    "children": [
+      {
         "name": "company",
         "label": "Firma",
         "type": "text",
         "default": "Musterfirma GmbH"
       },
-      "challenge": {
+      {
         "name": "challenge",
         "label": "Herausforderung",
         "type": "textarea",
         "default": "Lange Wartezeiten."
       },
-      "solution": {
+      {
         "name": "solution",
         "label": "Lösung",
         "type": "textarea",
         "default": "Prozesse automatisiert."
       },
-      "quote": {
+      {
         "name": "quote",
         "label": "Zitat",
         "type": "textarea",
         "default": "Exzellent!"
       }
-    },
+    ],
     "default": [
       {
         "company": "Musterfirma GmbH",
