@@ -62,7 +62,7 @@ This project is built with:
 
 ## Running tests
 
-Run unit tests using Vitest. Install dependencies first:
+Run unit tests using Vitest. Run `npm install` once to install dependencies before executing the tests:
 
 ```sh
 npm install
@@ -75,11 +75,23 @@ Simply open [Lovable](https://lovable.dev/projects/3b9be350-f6a8-47f6-a06d-fe661
 
 ## Installing the HubSpot theme
 
+Follow these steps to install the theme in your HubSpot account.
+
 1. Navigate to the `src/templates` directory of this repository.
-2. Zip the contents of this folder (not the folder itself).
+2. Compress all files inside this folder into a ZIP archive **without including the `src/templates` folder itself**.
 3. In HubSpot, open **Marketing > Files and Templates > Design Tools**.
-4. Click **File > Upload** and select the generated ZIP file.
-5. After the upload finishes you can create a new page and choose `ki-transformation.html` or `landing-page.html` from the theme templates.
+4. Click **File > Upload** and select the ZIP archive. HubSpot will extract the files into your account.
+5. After the upload finishes, create a new page and choose `ki-transformation.html` or `landing-page.html` from the uploaded theme.
+
+### Using the HubSpot CLI (optional)
+
+You can also upload the templates using the HubSpot CLI. Configure your `hubspot.config.yml` and run:
+
+```sh
+hs upload src/templates <destination-path-in-hubspot>
+```
+
+This command uploads the templates directly to the specified folder in your HubSpot account.
 
 ## Can I connect a custom domain to my Lovable project?
 
