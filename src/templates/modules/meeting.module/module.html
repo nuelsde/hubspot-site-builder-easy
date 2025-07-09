@@ -10,7 +10,8 @@
     
     <div style="max-width: 600px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px;">
       {% if module.hubspot_form_id %}
-        {% form form_id="{{ module.hubspot_form_id }}" %}
+        {# Updated per HubSpot docs: use form_to_use parameter #}
+        {% form form_to_use="{{ module.hubspot_form_id }}" %}
       {% else %}
         <div style="text-align: center; color: #666;">
           <p>Bitte geben Sie eine HubSpot Form ID in den Modul-Einstellungen ein.</p>
