@@ -93,6 +93,19 @@ hs upload src/templates <destination-path-in-hubspot>
 
 This command uploads the templates directly to the specified folder in your HubSpot account.
 
+A sample `hubspot.config.yml` is included at the project root:
+
+```yaml
+defaultPortal: default
+portals:
+  - name: default
+    portalId: YOUR-PORTAL-ID
+    authType: personalaccesskey
+    personalAccessKey: YOUR-PERSONAL-ACCESS-KEY
+```
+
+Edit `portalId` and `personalAccessKey` with your HubSpot credentials and adjust `defaultPortal` if you use a different portal name.
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!

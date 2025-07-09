@@ -1,0 +1,6 @@
+defaultPortal: default
+portals:
+  - name: default
+    portalId: YOUR-PORTAL-ID
+    authType: personalaccesskey
+    personalAccessKey: YOUR-PERSONAL-ACCESS-KEY
