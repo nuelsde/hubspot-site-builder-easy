@@ -73,6 +73,14 @@ npm test
 
 Simply open [Lovable](https://lovable.dev/projects/3b9be350-f6a8-47f6-a06d-fe661ec1ad1c) and click on Share -> Publish.
 
+## Installing the HubSpot theme
+
+1. Navigate to the `src/templates` directory of this repository.
+2. Zip the contents of this folder (not the folder itself).
+3. In HubSpot, open **Marketing > Files and Templates > Design Tools**.
+4. Click **File > Upload** and select the generated ZIP file.
+5. After the upload finishes you can create a new page and choose `ki-transformation.html` or `landing-page.html` from the theme templates.
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!

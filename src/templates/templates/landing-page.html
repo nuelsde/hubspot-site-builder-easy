@@ -5,6 +5,7 @@
         <title>{{ content.html_title }}</title>
         <meta name="description" content="{{ content.meta_description }}">
         {{ standard_header_includes }}
+        {{ require_css(get_asset_url("../css/main.css")) }}
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body>
@@ -34,5 +35,4 @@
             {% end_dnd_area %}
         </div>
         {{ standard_footer_includes }}
-    </body>
-</html>
+    </body></html>
