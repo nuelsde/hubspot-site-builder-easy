@@ -1,41 +1,35 @@
-
 [
   {
-    "id": "features_title",
     "name": "features_title",
     "label": "Titel",
     "type": "text",
     "default": "Unsere Services"
   },
   {
-    "id": "features_group",
     "name": "features_group",
     "label": "Features",
     "type": "group",
-  "repeatable": true,
-    "children": [
-      {
-        "id": "icon",
+    "repeatable": true,
+    "children": {
+      "icon": {
         "name": "icon",
         "label": "Icon",
         "type": "text",
         "default": "🚀"
       },
-      {
-        "id": "feature_title",
+      "feature_title": {
         "name": "feature_title",
         "label": "Titel",
         "type": "text",
         "default": "Digitale Transformation"
       },
-      {
-        "id": "description",
+      "description": {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Modernisieren Sie Ihr Unternehmen."
       }
-    ],
+    },
     "default": [
       {
         "icon": "🚀",

@@ -1,62 +1,53 @@
-
 [
   {
-    "id": "downloads_title",
     "name": "downloads_title",
     "label": "Titel",
     "type": "text",
     "default": "Kostenlose Ressourcen"
   },
   {
-    "id": "downloads_subtitle",
     "name": "downloads_subtitle",
     "label": "Untertitel",
     "type": "textarea",
     "default": "Starten Sie noch heute mit diesen kostenlosen Tools"
   },
   {
-    "id": "downloads",
     "name": "downloads",
     "label": "Downloads",
     "type": "group",
-  "repeatable": true,
-    "children": [
-      {
-        "id": "icon",
+    "repeatable": true,
+    "children": {
+      "icon": {
         "name": "icon",
         "label": "Icon",
         "type": "text",
         "default": "📋"
       },
-      {
-        "id": "title",
+      "title": {
         "name": "title",
         "label": "Titel",
         "type": "text",
         "default": "KI-Readiness Check"
       },
-      {
-        "id": "description",
+      "description": {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Bewerten Sie den KI-Reifegrad Ihres Unternehmens"
       },
-      {
-        "id": "cta_text",
+      "cta_text": {
         "name": "cta_text",
         "label": "Button Text",
         "type": "text",
         "default": "Kostenlos herunterladen"
       },
-      {
-        "id": "download_link",
+      "download_link": {
         "name": "download_link",
         "label": "Download Link",
         "type": "text",
         "default": "#"
       }
-    ],
+    },
     "default": [
       {
         "icon": "📋",

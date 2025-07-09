@@ -1,48 +1,41 @@
-
 [
   {
-    "id": "painpoints_title",
     "name": "painpoints_title",
     "label": "Titel",
     "type": "text",
     "default": "Kennen Sie diese Herausforderungen?"
   },
   {
-    "id": "painpoints_subtitle",
     "name": "painpoints_subtitle",
     "label": "Untertitel",
     "type": "textarea",
     "default": "Viele etablierte Unternehmen stehen vor denselben KI-Problemen. Sie sind nicht allein – aber Sie müssen jetzt handeln."
   },
   {
-    "id": "painpoints_group",
     "name": "painpoints_group",
     "label": "Herausforderungen",
     "type": "group",
-  "repeatable": true,
-    "children": [
-      {
-        "id": "icon",
+    "repeatable": true,
+    "children": {
+      "icon": {
         "name": "icon",
         "label": "Icon",
         "type": "text",
         "default": "⚠️"
       },
-      {
-        "id": "title",
+      "title": {
         "name": "title",
         "label": "Titel",
         "type": "text",
         "default": "KI-Unsicherheit lähmt"
       },
-      {
-        "id": "description",
+      "description": {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Ihre Mitarbeiter haben Angst vor KI oder nutzen sie unkontrolliert."
       }
-    ],
+    },
     "default": [
       {
         "icon": "⚠️",
@@ -67,14 +60,12 @@
     ]
   },
   {
-    "id": "solution_title",
     "name": "solution_title",
     "label": "Lösungs-Titel",
     "type": "text",
     "default": "Die Lösung: Systematische KI-Transformation"
   },
   {
-    "id": "solution_text",
     "name": "solution_text",
     "label": "Lösungs-Text",
     "type": "textarea",
