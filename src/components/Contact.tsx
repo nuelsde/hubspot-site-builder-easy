@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { contactData } from "../data/contact";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -123,15 +124,19 @@ export const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <Phone className="h-6 w-6 mr-4" />
-                    <span>+49 (0) 123 456 789</span>
+                    <span>{contactData.contact.phone}</span>
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-6 w-6 mr-4" />
-                    <span>info@businesspro.de</span>
+                    <span>{contactData.contact.email}</span>
                   </div>
                   <div className="flex items-center">
                     <MapPin className="h-6 w-6 mr-4" />
-                    <span>Musterstraße 123<br />12345 Berlin</span>
+                    <span>
+                      {contactData.address.street}
+                      <br />
+                      {contactData.address.postalCode} {contactData.address.city}
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -140,7 +145,7 @@ export const Contact = () => {
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Warum BusinessPro wählen?
+                  Warum {contactData.companyName} wählen?
                 </h3>
                 <ul className="space-y-3 text-gray-600">
                   <li>✓ Kostenlose Erstberatung</li>
