@@ -16,50 +16,50 @@
     "label": "Pakete",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "name": {
+    "children": [
+      {
         "name": "name",
         "label": "Name",
         "type": "text",
         "default": "KI-Schnellstart"
       },
-      "price": {
+      {
         "name": "price",
         "label": "Preis",
         "type": "text",
         "default": "€2.999"
       },
-      "duration": {
+      {
         "name": "duration",
         "label": "Dauer",
         "type": "text",
         "default": "2 Wochen"
       },
-      "description": {
+      {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Der ideale Einstieg in die KI-Welt"
       },
-      "features": {
+      {
         "name": "features",
         "label": "Features",
         "type": "textarea",
         "default": "KI-Potenzialanalyse, Workshop, Roadmap"
       },
-      "cta_text": {
+      {
         "name": "cta_text",
         "label": "Button Text",
         "type": "text",
         "default": "Jetzt starten"
       },
-      "cta_link": {
+      {
         "name": "cta_link",
         "label": "Button Link",
         "type": "text",
         "default": "#meeting"
       }
-    },
+    ],
     "default": [
       {
         "name": "KI-Schnellstart",

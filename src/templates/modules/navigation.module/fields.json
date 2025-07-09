@@ -22,20 +22,20 @@
     "locked": false,
     "type": "group",
     "repeatable": true,
-    "children": {
-      "link_text": {
+    "children": [
+      {
         "name": "link_text",
         "label": "Link Text",
         "required": true,
         "type": "text"
       },
-      "link": {
+      {
         "name": "link",
         "label": "Link",
         "required": true,
         "type": "link"
       }
-    },
+    ],
     "default": [
       {
         "link_text": "Herausforderungen",

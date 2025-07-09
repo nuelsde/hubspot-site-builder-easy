@@ -22,20 +22,20 @@
     "locked": false,
     "type": "group",
     "repeatable": true,
-    "children": {
-      "name": {
+    "children": [
+      {
         "name": "name",
         "label": "Service Name",
         "required": true,
         "type": "text"
       },
-      "link": {
+      {
         "name": "link",
         "label": "Service Link",
         "required": false,
         "type": "link"
       }
-    },
+    ],
     "default": [
       {
         "name": "5-Stufen-Modell",

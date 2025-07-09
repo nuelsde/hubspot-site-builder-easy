@@ -10,26 +10,26 @@
     "label": "Features",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "icon": {
+    "children": [
+      {
         "name": "icon",
         "label": "Icon",
         "type": "text",
         "default": "🚀"
       },
-      "feature_title": {
+      {
         "name": "feature_title",
         "label": "Titel",
         "type": "text",
         "default": "Digitale Transformation"
       },
-      "description": {
+      {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Modernisieren Sie Ihr Unternehmen."
       }
-    },
+    ],
     "default": [
       {
         "icon": "🚀",

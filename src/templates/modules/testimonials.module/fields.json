@@ -10,23 +10,23 @@
     "label": "Kundenstimmen",
     "type": "group",
     "repeatable": true,
-    "children": {
-      "testimonial_content": {
+    "children": [
+      {
         "name": "testimonial_content",
         "label": "Inhalt",
         "type": "textarea"
       },
-      "person_name": {
+      {
         "name": "person_name",
         "label": "Name der Person",
         "type": "text"
       },
-      "person_position": {
+      {
         "name": "person_position",
         "label": "Position",
         "type": "text"
       }
-    },
+    ],
     "default": [
       {
         "testimonial_content": "Die Zusammenarbeit war exzellent.",
