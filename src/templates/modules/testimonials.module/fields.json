@@ -12,6 +12,7 @@
     "name": "testimonial_group",
     "label": "Kundenstimmen",
     "type": "group",
+  "repeatable": true,
     "children": [
       {
         "id": "testimonial_content",

@@ -19,6 +19,7 @@
     "name": "painpoints_group",
     "label": "Herausforderungen",
     "type": "group",
+  "repeatable": true,
     "children": [
       {
         "id": "icon",
