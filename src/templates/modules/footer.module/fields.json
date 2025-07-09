@@ -25,6 +25,7 @@
     "required": false,
     "locked": false,
     "type": "group",
+  "repeatable": true,
     "children": [
       {
         "id": "name",

@@ -12,6 +12,7 @@
     "name": "faq_group",
     "label": "FAQs",
     "type": "group",
+  "repeatable": true,
     "children": [
       {
         "id": "question",

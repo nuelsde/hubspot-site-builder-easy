@@ -12,6 +12,7 @@
     "name": "case_studies",
     "label": "Fallstudien",
     "type": "group",
+  "repeatable": true,
     "children": [
       {
         "id": "company",

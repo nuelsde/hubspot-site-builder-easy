@@ -12,6 +12,7 @@
     "name": "features_group",
     "label": "Features",
     "type": "group",
+  "repeatable": true,
     "children": [
       {
         "id": "icon",
