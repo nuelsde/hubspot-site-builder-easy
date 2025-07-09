@@ -127,7 +127,7 @@ export const Contact = () => {
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-6 w-6 mr-4" />
-                    <span>info@businesspro.de</span>
+                  <span>kontakt@merkur-impulse.com</span>
                   </div>
                   <div className="flex items-center">
                     <MapPin className="h-6 w-6 mr-4" />
@@ -140,7 +140,7 @@ export const Contact = () => {
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  Warum BusinessPro wählen?
+                  Warum MERKUR Impulse wählen?
                 </h3>
                 <ul className="space-y-3 text-gray-600">
                   <li>✓ Kostenlose Erstberatung</li>
