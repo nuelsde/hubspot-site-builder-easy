@@ -1,7 +1,5 @@
-
 [
   {
-    "id": "title",
     "name": "title",
     "label": "Section Title",
     "required": true,
@@ -10,7 +8,6 @@
     "default": "Kostenloses Beratungsgespräch buchen"
   },
   {
-    "id": "subtitle",
     "name": "subtitle",
     "label": "Section Subtitle",
     "required": false,
@@ -19,7 +16,6 @@
     "default": "Lassen Sie uns gemeinsam Ihre KI-Potenziale entdecken und den ersten Schritt in Richtung digitale Transformation gehen."
   },
   {
-    "id": "hubspot_form_id",
     "name": "hubspot_form_id",
     "label": "HubSpot Form ID",
     "required": false,

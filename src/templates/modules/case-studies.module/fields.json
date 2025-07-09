@@ -1,48 +1,41 @@
-
 [
   {
-    "id": "casestudies_title",
     "name": "casestudies_title",
     "label": "Titel",
     "type": "text",
     "default": "Erfolgsgeschichten"
   },
   {
-    "id": "case_studies",
     "name": "case_studies",
     "label": "Fallstudien",
     "type": "group",
-  "repeatable": true,
-    "children": [
-      {
-        "id": "company",
+    "repeatable": true,
+    "children": {
+      "company": {
         "name": "company",
         "label": "Firma",
         "type": "text",
         "default": "Musterfirma GmbH"
       },
-      {
-        "id": "challenge",
+      "challenge": {
         "name": "challenge",
         "label": "Herausforderung",
         "type": "textarea",
         "default": "Lange Wartezeiten."
       },
-      {
-        "id": "solution",
+      "solution": {
         "name": "solution",
         "label": "Lösung",
         "type": "textarea",
         "default": "Prozesse automatisiert."
       },
-      {
-        "id": "quote",
+      "quote": {
         "name": "quote",
         "label": "Zitat",
         "type": "textarea",
         "default": "Exzellent!"
       }
-    ],
+    },
     "default": [
       {
         "company": "Musterfirma GmbH",

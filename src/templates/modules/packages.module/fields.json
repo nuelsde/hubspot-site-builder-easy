@@ -1,76 +1,65 @@
-
 [
   {
-    "id": "packages_title",
     "name": "packages_title",
     "label": "Titel",
     "type": "text",
     "default": "Unsere KI-Pakete"
   },
   {
-    "id": "packages_subtitle",
     "name": "packages_subtitle",
     "label": "Untertitel",
     "type": "textarea",
     "default": "Wählen Sie das passende Paket für Ihren KI-Einstieg"
   },
   {
-    "id": "packages",
     "name": "packages",
     "label": "Pakete",
     "type": "group",
-  "repeatable": true,
-    "children": [
-      {
-        "id": "name",
+    "repeatable": true,
+    "children": {
+      "name": {
         "name": "name",
         "label": "Name",
         "type": "text",
         "default": "KI-Schnellstart"
       },
-      {
-        "id": "price",
+      "price": {
         "name": "price",
         "label": "Preis",
         "type": "text",
         "default": "€2.999"
       },
-      {
-        "id": "duration",
+      "duration": {
         "name": "duration",
         "label": "Dauer",
         "type": "text",
         "default": "2 Wochen"
       },
-      {
-        "id": "description",
+      "description": {
         "name": "description",
         "label": "Beschreibung",
         "type": "textarea",
         "default": "Der ideale Einstieg in die KI-Welt"
       },
-      {
-        "id": "features",
+      "features": {
         "name": "features",
         "label": "Features",
         "type": "textarea",
         "default": "KI-Potenzialanalyse, Workshop, Roadmap"
       },
-      {
-        "id": "cta_text",
+      "cta_text": {
         "name": "cta_text",
         "label": "Button Text",
         "type": "text",
         "default": "Jetzt starten"
       },
-      {
-        "id": "cta_link",
+      "cta_link": {
         "name": "cta_link",
         "label": "Button Link",
         "type": "text",
         "default": "#meeting"
       }
-    ],
+    },
     "default": [
       {
         "name": "KI-Schnellstart",

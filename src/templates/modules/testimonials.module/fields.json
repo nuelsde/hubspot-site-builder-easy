@@ -1,38 +1,32 @@
-
 [
   {
-    "id": "testimonials_title",
     "name": "testimonials_title",
     "label": "Titel",
     "type": "text",
     "default": "Was unsere Kunden sagen"
   },
   {
-    "id": "testimonial_group",
     "name": "testimonial_group",
     "label": "Kundenstimmen",
     "type": "group",
-  "repeatable": true,
-    "children": [
-      {
-        "id": "testimonial_content",
+    "repeatable": true,
+    "children": {
+      "testimonial_content": {
         "name": "testimonial_content",
         "label": "Inhalt",
         "type": "textarea"
       },
-      {
-        "id": "person_name",
+      "person_name": {
         "name": "person_name",
         "label": "Name der Person",
         "type": "text"
       },
-      {
-        "id": "person_position",
+      "person_position": {
         "name": "person_position",
         "label": "Position",
         "type": "text"
       }
-    ],
+    },
     "default": [
       {
         "testimonial_content": "Die Zusammenarbeit war exzellent.",

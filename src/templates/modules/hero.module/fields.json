@@ -1,7 +1,5 @@
-
 [
   {
-    "id": "title",
     "name": "title",
     "label": "Hero Title",
     "required": true,
@@ -10,7 +8,6 @@
     "default": "Von KI-Unsicherheit zu KI-Innovation"
   },
   {
-    "id": "subtitle",
     "name": "subtitle",
     "label": "Hero Subtitle",
     "required": false,
@@ -19,7 +16,6 @@
     "default": "Unser bewährtes 5-Phasen-Vorgehensmodell bringt Ihr Unternehmen systematisch und sicher in die KI-Zukunft. Von der ersten Analyse bis zur erfolgreichen Implementierung."
   },
   {
-    "id": "cta_button_text",
     "name": "cta_button_text",
     "label": "CTA Button Text",
     "required": false,
@@ -28,7 +24,6 @@
     "default": "Kostenlose Potenzialanalyse"
   },
   {
-    "id": "cta_button_link",
     "name": "cta_button_link",
     "label": "CTA Button Link",
     "required": false,

@@ -1,7 +1,5 @@
-
 [
   {
-    "id": "brand_name",
     "name": "brand_name",
     "label": "Brand Name",
     "required": false,
@@ -10,7 +8,6 @@
     "default": "KI-Transformation"
   },
   {
-    "id": "logo_image",
     "name": "logo_image",
     "label": "Logo Image",
     "required": false,
@@ -19,29 +16,26 @@
     "help_text": "Upload your logo image (optional)"
   },
   {
-    "id": "nav_items",
     "name": "nav_items",
     "label": "Navigation Items",
     "required": false,
     "locked": false,
     "type": "group",
-  "repeatable": true,
-    "children": [
-      {
-        "id": "link_text",
+    "repeatable": true,
+    "children": {
+      "link_text": {
         "name": "link_text",
         "label": "Link Text",
         "required": true,
         "type": "text"
       },
-      {
-        "id": "link",
+      "link": {
         "name": "link",
         "label": "Link",
         "required": true,
         "type": "link"
       }
-    ],
+    },
     "default": [
       {
         "link_text": "Herausforderungen",
@@ -64,7 +58,6 @@
     ]
   },
   {
-    "id": "cta_button_text",
     "name": "cta_button_text",
     "label": "CTA Button Text",
     "required": false,
@@ -73,7 +66,6 @@
     "default": "Termin buchen"
   },
   {
-    "id": "cta_button_link",
     "name": "cta_button_link",
     "label": "CTA Button Link",
     "required": false,
