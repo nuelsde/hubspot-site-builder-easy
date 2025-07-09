@@ -9,7 +9,8 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "package:theme": "bash scripts/package-theme.sh"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
