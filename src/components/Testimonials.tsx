@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Sarah Mueller",
     position: "Geschäftsführerin, TechStart GmbH",
-    content: "Die Zusammenarbeit mit BusinessPro hat unser Unternehmen komplett transformiert. Der ROI war bereits nach 3 Monaten spürbar.",
+    content: "Die Zusammenarbeit mit MERKUR Impulse hat unser Unternehmen komplett transformiert. Der ROI war bereits nach 3 Monaten spürbar.",
     rating: 5,
     avatar: "SM"
   },
