@@ -19,7 +19,7 @@
     "repeatable": true,
     "children": [
       {
-        "name": "name",
+        "name": "package_name",
         "label": "Name",
         "type": "text",
         "default": "KI-Schnellstart"
@@ -65,7 +65,7 @@
     ],
     "default": [
       {
-        "name": "KI-Schnellstart",
+        "package_name": "KI-Schnellstart",
         "price": "€2.999",
         "duration": "2 Wochen",
         "description": "Der ideale Einstieg in die KI-Welt",

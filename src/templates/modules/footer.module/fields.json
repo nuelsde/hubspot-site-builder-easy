@@ -25,7 +25,7 @@
     "repeatable": true,
     "children": [
       {
-        "name": "name",
+        "name": "service_name",
         "label": "Service Name",
         "required": true,
         "type": "text"
@@ -39,7 +39,7 @@
     ],
     "default": [
       {
-        "name": "5-Stufen-Modell",
+        "service_name": "5-Stufen-Modell",
         "link": {
           "url": {
             "href": "#methodology",
@@ -50,7 +50,7 @@
         }
       },
       {
-        "name": "KI-Standortbestimmung",
+        "service_name": "KI-Standortbestimmung",
         "link": {
           "url": {
             "href": "#packages",
@@ -61,7 +61,7 @@
         }
       },
       {
-        "name": "KI-Transformation",
+        "service_name": "KI-Transformation",
         "link": {
           "url": {
             "href": "#packages",
