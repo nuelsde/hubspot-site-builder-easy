@@ -31,7 +31,12 @@
     "locked": false,
     "type": "link",
     "default": {
-      "href": "#meeting"
+      "url": {
+        "href": "#meeting",
+        "type": "EXTERNAL"
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
     }
   }
 ]

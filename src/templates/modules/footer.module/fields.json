@@ -41,19 +41,34 @@
       {
         "name": "5-Stufen-Modell",
         "link": {
-          "href": "#methodology"
+          "url": {
+            "href": "#methodology",
+            "type": "EXTERNAL"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
         }
       },
       {
         "name": "KI-Standortbestimmung",
         "link": {
-          "href": "#packages"
+          "url": {
+            "href": "#packages",
+            "type": "EXTERNAL"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
         }
       },
       {
         "name": "KI-Transformation",
         "link": {
-          "href": "#packages"
+          "url": {
+            "href": "#packages",
+            "type": "EXTERNAL"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
         }
       }
     ]
