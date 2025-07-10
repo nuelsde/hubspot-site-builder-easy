@@ -40,19 +40,34 @@
       {
         "link_text": "Herausforderungen",
         "link": {
-          "href": "#painpoints"
+          "url": {
+            "href": "#painpoints",
+            "type": "EXTERNAL"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
         }
       },
       {
         "link_text": "Phasenmodell",
         "link": {
-          "href": "#methodology"
+          "url": {
+            "href": "#methodology",
+            "type": "EXTERNAL"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
         }
       },
       {
         "link_text": "Erfolgsgeschichten",
         "link": {
-          "href": "#case-studies"
+          "url": {
+            "href": "#case-studies",
+            "type": "EXTERNAL"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
         }
       }
     ]
@@ -72,7 +87,12 @@
     "locked": false,
     "type": "link",
     "default": {
-      "href": "#meeting"
+      "url": {
+        "href": "#meeting",
+        "type": "EXTERNAL"
+      },
+      "open_in_new_tab": false,
+      "no_follow": false
     }
   }
 ]
