@@ -8,7 +8,8 @@
   {
     "name": "downloads_subtitle",
     "label": "Untertitel",
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Starten Sie noch heute mit diesen kostenlosen Tools"
   },
   {
@@ -32,7 +33,8 @@
       {
         "name": "description",
         "label": "Beschreibung",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Bewerten Sie den KI-Reifegrad Ihres Unternehmens"
       },
       {

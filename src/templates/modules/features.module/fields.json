@@ -26,7 +26,8 @@
       {
         "name": "description",
         "label": "Beschreibung",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Modernisieren Sie Ihr Unternehmen."
       }
     ],

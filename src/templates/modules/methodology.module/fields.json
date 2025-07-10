@@ -8,7 +8,8 @@
   {
     "name": "methodology_subtitle",
     "label": "Untertitel",
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Systematisch von KI-Unsicherheit zu messbarem Erfolg"
   },
   {
@@ -32,19 +33,22 @@
       {
         "name": "description",
         "label": "Beschreibung",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Wo stehen Sie heute mit KI?"
       },
       {
         "name": "activities",
         "label": "Aktivitäten",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Ist-Analyse, Potenzial-Assessment, Quick-Wins identifizieren"
       },
       {
         "name": "results",
         "label": "Ergebnisse",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "KI-Reifegrad, Handlungsempfehlungen, Prioritätenliste"
       }
     ],

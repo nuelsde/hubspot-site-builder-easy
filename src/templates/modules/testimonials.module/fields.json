@@ -14,7 +14,8 @@
       {
         "name": "testimonial_content",
         "label": "Inhalt",
-        "type": "textarea"
+        "type": "text",
+        "display": "textarea"
       },
       {
         "name": "person_name",
