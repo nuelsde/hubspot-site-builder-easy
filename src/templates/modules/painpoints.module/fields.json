@@ -22,7 +22,7 @@
         "name": "icon",
         "label": "Icon",
         "type": "text",
-        "default": "⚠️"
+        "default": "warning"
       },
       {
         "name": "title",
@@ -40,22 +40,22 @@
     ],
     "default": [
       {
-        "icon": "⚠️",
+        "icon": "warning",
         "title": "KI-Unsicherheit lähmt",
         "description": "Ihre Mitarbeiter haben Angst vor KI oder nutzen sie unkontrolliert."
       },
       {
-        "icon": "⏰",
+        "icon": "clock",
         "title": "Zeitverschwendung durch Tool-Hopping",
         "description": "Ständig neue KI-Tools, aber keine nachhaltigen Ergebnisse."
       },
       {
-        "icon": "👥",
+        "icon": "people",
         "title": "Mitarbeiter werden abgehängt",
         "description": "Während die Konkurrenz KI nutzt, bleiben Ihre Prozesse ineffizient."
       },
       {
-        "icon": "📉",
+        "icon": "chart-down",
         "title": "Wettbewerbsnachteil droht",
         "description": "Unternehmen mit systematischer KI-Nutzung überholen Sie."
       }

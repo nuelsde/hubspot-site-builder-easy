@@ -15,7 +15,7 @@
         "name": "icon",
         "label": "Icon",
         "type": "text",
-        "default": "🚀"
+        "default": "rocket"
       },
       {
         "name": "feature_title",
@@ -33,22 +33,22 @@
     ],
     "default": [
       {
-        "icon": "🚀",
+        "icon": "rocket",
         "feature_title": "Digitale Transformation",
         "description": "Modernisieren Sie Ihr Unternehmen."
       },
       {
-        "icon": "🎯",
+        "icon": "target",
         "feature_title": "Strategische Beratung",
         "description": "Entwickeln Sie mit uns eine maßgeschneiderte Strategie."
       },
       {
-        "icon": "🤝",
+        "icon": "handshake",
         "feature_title": "Team Development",
         "description": "Stärken Sie Ihr Team durch professionelle Schulungen."
       },
       {
-        "icon": "⚡️",
+        "icon": "bolt",
         "feature_title": "Process Optimization",
         "description": "Optimieren Sie Ihre Geschäftsprozesse."
       }

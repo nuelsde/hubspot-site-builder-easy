@@ -22,7 +22,7 @@
         "name": "icon",
         "label": "Icon",
         "type": "text",
-        "default": "📋"
+        "default": "clipboard"
       },
       {
         "name": "title",
@@ -52,7 +52,7 @@
     ],
     "default": [
       {
-        "icon": "📋",
+        "icon": "clipboard",
         "title": "KI-Readiness Check",
         "description": "Bewerten Sie den KI-Reifegrad Ihres Unternehmens",
         "cta_text": "Kostenlos herunterladen",
