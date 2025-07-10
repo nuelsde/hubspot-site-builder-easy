@@ -8,7 +8,8 @@
   {
     "name": "painpoints_subtitle",
     "label": "Untertitel",
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Viele etablierte Unternehmen stehen vor denselben KI-Problemen. Sie sind nicht allein – aber Sie müssen jetzt handeln."
   },
   {
@@ -32,7 +33,8 @@
       {
         "name": "description",
         "label": "Beschreibung",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Ihre Mitarbeiter haben Angst vor KI oder nutzen sie unkontrolliert."
       }
     ],
@@ -68,7 +70,8 @@
   {
     "name": "solution_text",
     "label": "Lösungs-Text",
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Unser 5-Phasen-Modell bringt Klarheit in das KI-Chaos und macht Ihr Unternehmen systematisch fit für die KI-Zukunft."
   }
 ]

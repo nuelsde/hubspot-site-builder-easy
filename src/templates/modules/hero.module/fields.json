@@ -12,7 +12,8 @@
     "label": "Hero Subtitle",
     "required": false,
     "locked": false,
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Unser bewährtes 5-Phasen-Vorgehensmodell bringt Ihr Unternehmen systematisch und sicher in die KI-Zukunft. Von der ersten Analyse bis zur erfolgreichen Implementierung."
   },
   {

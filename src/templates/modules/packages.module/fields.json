@@ -8,7 +8,8 @@
   {
     "name": "packages_subtitle",
     "label": "Untertitel",
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Wählen Sie das passende Paket für Ihren KI-Einstieg"
   },
   {
@@ -38,13 +39,15 @@
       {
         "name": "description",
         "label": "Beschreibung",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Der ideale Einstieg in die KI-Welt"
       },
       {
         "name": "features",
         "label": "Features",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "KI-Potenzialanalyse, Workshop, Roadmap"
       },
       {

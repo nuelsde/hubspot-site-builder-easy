@@ -12,7 +12,8 @@
     "label": "Section Subtitle",
     "required": false,
     "locked": false,
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Lassen Sie uns gemeinsam Ihre KI-Potenziale entdecken und den ersten Schritt in Richtung digitale Transformation gehen."
   },
   {

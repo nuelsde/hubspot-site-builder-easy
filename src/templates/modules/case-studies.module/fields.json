@@ -20,19 +20,22 @@
       {
         "name": "challenge",
         "label": "Herausforderung",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Lange Wartezeiten."
       },
       {
         "name": "solution",
         "label": "Lösung",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Prozesse automatisiert."
       },
       {
         "name": "quote",
         "label": "Zitat",
-        "type": "textarea",
+        "type": "text",
+        "display": "textarea",
         "default": "Exzellent!"
       }
     ],

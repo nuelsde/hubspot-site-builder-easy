@@ -12,7 +12,8 @@
     "label": "Company Description",
     "required": false,
     "locked": false,
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Ihr Experte für systematische KI-Transformation. Von der Unklarheit zum Innovationstreiber."
   },
   {
@@ -78,7 +79,8 @@
     "label": "Address",
     "required": false,
     "locked": false,
-    "type": "textarea",
+    "type": "text",
+    "display": "textarea",
     "default": "Musterstraße 123\n12345 München"
   },
   {
