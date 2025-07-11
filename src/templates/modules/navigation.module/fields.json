@@ -24,7 +24,8 @@
     "occurrence": {
       "min": 1,
       "max": null,
-      "default": 1
+      "default": 1,
+      "sorting_label_field": "nav_items.link_text"
     },
     "children": [
       {

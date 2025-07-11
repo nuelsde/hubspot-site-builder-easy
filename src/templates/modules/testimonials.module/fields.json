@@ -12,7 +12,7 @@
     "occurrence": {
       "min": 1,
       "max": 10,
-      "sorting_label_field": "person_name",
+      "sorting_label_field": "testimonial_group.person_name",
       "default": 1
     },
     "children": [

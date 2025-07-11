@@ -19,7 +19,8 @@
     "occurrence": {
       "min": 1,
       "max": null,
-      "default": 1
+      "default": 1,
+      "sorting_label_field": "painpoints_group.title"
     },
     "children": [
       {
