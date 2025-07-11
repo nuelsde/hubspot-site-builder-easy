@@ -9,7 +9,12 @@
     "name": "testimonial_group",
     "label": "Kundenstimmen",
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": 10,
+      "sorting_label_field": "person_name",
+      "default": 1
+    },
     "children": [
       {
         "name": "testimonial_content",
