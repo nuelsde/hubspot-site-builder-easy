@@ -21,7 +21,12 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1,
+      "sorting_label_field": "nav_items.link_text"
+    },
     "children": [
       {
         "name": "link_text",

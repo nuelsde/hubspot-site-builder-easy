@@ -16,7 +16,12 @@
     "name": "packages",
     "label": "Pakete",
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1,
+      "sorting_label_field": "packages.package_name"
+    },
     "children": [
       {
         "name": "package_name",

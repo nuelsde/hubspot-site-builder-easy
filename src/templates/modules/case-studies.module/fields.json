@@ -9,7 +9,12 @@
     "name": "case_studies",
     "label": "Fallstudien",
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1,
+      "sorting_label_field": "case_studies.company"
+    },
     "children": [
       {
         "name": "company",

@@ -16,7 +16,12 @@
     "name": "painpoints_group",
     "label": "Herausforderungen",
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1,
+      "sorting_label_field": "painpoints_group.title"
+    },
     "children": [
       {
         "name": "icon",
