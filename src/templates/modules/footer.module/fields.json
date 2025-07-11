@@ -22,7 +22,12 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 3,
+      "sorting_label_field": "services.service_name"
+    },
     "children": [
       {
         "name": "service_name",

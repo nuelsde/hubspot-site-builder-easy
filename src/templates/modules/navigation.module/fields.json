@@ -21,7 +21,11 @@
     "required": false,
     "locked": false,
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1
+    },
     "children": [
       {
         "name": "link_text",

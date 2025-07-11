@@ -16,7 +16,12 @@
     "name": "downloads",
     "label": "Downloads",
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1,
+      "sorting_label_field": "downloads.title"
+    },
     "children": [
       {
         "name": "icon",

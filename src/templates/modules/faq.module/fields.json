@@ -9,7 +9,11 @@
     "name": "faq_group",
     "label": "FAQs",
     "type": "group",
-    "repeatable": true,
+    "occurrence": {
+      "min": 1,
+      "max": null,
+      "default": 1
+    },
     "children": [
       {
         "name": "question",
