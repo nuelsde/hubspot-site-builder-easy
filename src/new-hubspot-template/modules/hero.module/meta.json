@@ -3,6 +3,10 @@
   "description": "Hero-Bereich mit Titel, Untertitel und Call-to-Action Button",
   "icon": "star",
   "is_available_for_new_content": true,
+<<<<<<< HEAD
   "host_template_types": ["PAGE"],
+=======
+  "host_template_types": ["PAGE", "LANDING_PAGE"],
+>>>>>>> efcd873b49acfe9e793e30da65bf2aedf0a9fcae
   "module_id": "hero_section"
 }
