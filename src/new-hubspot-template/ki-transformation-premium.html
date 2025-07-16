@@ -1,0 +1,66 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: KI-Transformation Premium
+  screenshotPath: ./images/template-preview.png
+-->
+<!DOCTYPE html>
+<html lang="{{ page_meta.html_lang }}">
+<head>
+    <meta charset="utf-8">
+    <title>{% if page_meta.name %}{{ page_meta.name }}{% endif %}</title>
+    <meta name="description" content="{% if page_meta.meta_description %}{{ page_meta.meta_description }}{% endif %}">
+    <meta name="author" content="KI-Transformation">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    
+    <!-- CSS -->
+    {{ require_css(get_asset_url("./css/main.css")) }}
+    
+    <!-- HubSpot Standard Header -->
+    {{ standard_header_includes }}
+</head>
+<body>
+    <!-- Navigation -->
+    {% module "navigation" path="./modules/navigation.module" %}
+    
+    <!-- Hero Section -->
+    {% module "hero" path="./modules/hero.module" %}
+    
+    <!-- Painpoints Section -->
+    {% module "painpoints" path="./modules/painpoints.module" %}
+    
+    <!-- Features Section -->
+    {% module "features" path="./modules/features.module" %}
+    
+    <!-- Methodology Section -->
+    {% module "methodology" path="./modules/methodology.module" %}
+    
+    <!-- Case Studies Section -->
+    {% module "case_studies" path="./modules/case-studies.module" %}
+    
+    <!-- Packages Section -->
+    {% module "packages" path="./modules/packages.module" %}
+    
+    <!-- Testimonials Section -->
+    {% module "testimonials" path="./modules/testimonials.module" %}
+    
+    <!-- Downloads Section -->
+    {% module "downloads" path="./modules/downloads.module" %}
+    
+    <!-- FAQ Section -->
+    {% module "faq" path="./modules/faq.module" %}
+    
+    <!-- Meeting Section -->
+    {% module "meeting" path="./modules/meeting.module" %}
+    
+    <!-- Footer -->
+    {% module "footer" path="./modules/footer.module" %}
+    
+    <!-- JavaScript -->
+    {{ require_js(get_asset_url("./js/main.js")) }}
+    
+    <!-- HubSpot Standard Footer -->
+    {{ standard_footer_includes }}
+</body>
+</html>

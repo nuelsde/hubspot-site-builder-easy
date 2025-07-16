@@ -1,0 +1,102 @@
+[
+  {
+    "name": "packages_title",
+    "label": "Packages Title",
+    "type": "text",
+    "required": true,
+    "default": "Unsere Pakete"
+  },
+  {
+    "name": "packages_subtitle",
+    "label": "Packages Subtitle",
+    "type": "textarea",
+    "default": "Wählen Sie das passende Paket für Ihre KI-Transformation"
+  },
+  {
+    "name": "packages",
+    "label": "Packages",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 3
+    },
+    "children": [
+      {
+        "name": "package_title",
+        "label": "Package Title",
+        "type": "text",
+        "required": true,
+        "default": "Starter Paket"
+      },
+      {
+        "name": "package_description",
+        "label": "Package Description",
+        "type": "textarea",
+        "required": true,
+        "default": "Perfekt für den Einstieg in die KI-Transformation"
+      },
+      {
+        "name": "price",
+        "label": "Price",
+        "type": "text",
+        "required": true,
+        "default": "€2.999"
+      },
+      {
+        "name": "price_period",
+        "label": "Price Period",
+        "type": "text",
+        "default": "/ einmalig"
+      },
+      {
+        "name": "is_featured",
+        "label": "Featured Package",
+        "type": "boolean",
+        "default": false
+      },
+      {
+        "name": "featured_label",
+        "label": "Featured Label",
+        "type": "text",
+        "default": "Beliebt"
+      },
+      {
+        "name": "features",
+        "label": "Features",
+        "type": "group",
+        "occurrence": {
+          "min": 1,
+          "max": 15,
+          "default": 5
+        },
+        "children": [
+          {
+            "name": "feature_name",
+            "label": "Feature Name",
+            "type": "text",
+            "required": true,
+            "default": "Feature Name"
+          }
+        ]
+      },
+      {
+        "name": "cta_text",
+        "label": "CTA Button Text",
+        "type": "text",
+        "required": true,
+        "default": "Jetzt buchen"
+      },
+      {
+        "name": "cta_link",
+        "label": "CTA Button Link",
+        "type": "link",
+        "required": true,
+        "default": {
+          "href": "#meeting",
+          "open_in_new_tab": false
+        }
+      }
+    ]
+  }
+]

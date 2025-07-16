@@ -1,0 +1,69 @@
+[
+  {
+    "name": "testimonials_title",
+    "label": "Testimonials Title",
+    "type": "text",
+    "required": true,
+    "default": "Kundenstimmen"
+  },
+  {
+    "name": "testimonials_subtitle",
+    "label": "Testimonials Subtitle",
+    "type": "textarea",
+    "default": "Erfahren Sie, was unsere Kunden über uns sagen"
+  },
+  {
+    "name": "testimonials",
+    "label": "Testimonials",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 12,
+      "default": 3
+    },
+    "children": [
+      {
+        "name": "testimonial_text",
+        "label": "Testimonial Text",
+        "type": "textarea",
+        "required": true,
+        "default": "Die KI-Transformation hat unsere Effizienz erheblich gesteigert."
+      },
+      {
+        "name": "client_name",
+        "label": "Client Name",
+        "type": "text",
+        "required": true,
+        "default": "Max Mustermann"
+      },
+      {
+        "name": "client_position",
+        "label": "Client Position",
+        "type": "text",
+        "required": true,
+        "default": "Geschäftsführer"
+      },
+      {
+        "name": "client_company",
+        "label": "Client Company",
+        "type": "text",
+        "required": true,
+        "default": "Muster GmbH"
+      },
+      {
+        "name": "rating",
+        "label": "Rating (1-5)",
+        "type": "number",
+        "min": 1,
+        "max": 5,
+        "default": 5
+      },
+      {
+        "name": "avatar_url",
+        "label": "Avatar URL",
+        "type": "text",
+        "help_text": "URL des Kundenfotos (optional)"
+      }
+    ]
+  }
+]

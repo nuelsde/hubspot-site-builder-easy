@@ -1,0 +1,48 @@
+[
+  {
+    "name": "features_title",
+    "label": "Features Title",
+    "type": "text",
+    "required": true,
+    "default": "Unsere KI-Lösungen"
+  },
+  {
+    "name": "features_subtitle",
+    "label": "Features Subtitle",
+    "type": "textarea",
+    "default": "Entdecken Sie die Vorteile unserer KI-Transformation für Ihr Unternehmen"
+  },
+  {
+    "name": "features_group",
+    "label": "Features",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 8,
+      "default": 4
+    },
+    "children": [
+      {
+        "name": "icon",
+        "label": "Icon",
+        "type": "text",
+        "help_text": "Emoji oder Icon für das Feature",
+        "default": "🤖"
+      },
+      {
+        "name": "feature_title",
+        "label": "Feature Title",
+        "type": "text",
+        "required": true,
+        "default": "KI-Automatisierung"
+      },
+      {
+        "name": "description",
+        "label": "Feature Description",
+        "type": "textarea",
+        "required": true,
+        "default": "Automatisieren Sie wiederkehrende Aufgaben mit intelligenten KI-Systemen."
+      }
+    ]
+  }
+]

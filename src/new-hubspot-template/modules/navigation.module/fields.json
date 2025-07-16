@@ -1,0 +1,38 @@
+[
+  {
+    "name": "logo_text",
+    "label": "Logo Text",
+    "type": "text",
+    "required": true,
+    "default": "KI-Transformation"
+  },
+  {
+    "name": "nav_items",
+    "label": "Navigation Items",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 10,
+      "default": 6
+    },
+    "children": [
+      {
+        "name": "link_text",
+        "label": "Link Text",
+        "type": "text",
+        "required": true,
+        "default": "Home"
+      },
+      {
+        "name": "link",
+        "label": "Link",
+        "type": "link",
+        "required": true,
+        "default": {
+          "href": "#home",
+          "open_in_new_tab": false
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "label": "Testimonials Section",
+  "description": "Bereich zur Darstellung von Kundenstimmen und Bewertungen",
+  "icon": "message-circle",
+  "is_available_for_new_content": true,
+  "host_template_types": ["PAGE", "LANDING_PAGE"],
+  "module_id": "testimonials_section"
+}

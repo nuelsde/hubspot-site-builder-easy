@@ -1,0 +1,8 @@
+{
+  "label": "FAQ Section",
+  "description": "Bereich für häufig gestellte Fragen",
+  "icon": "help-circle",
+  "is_available_for_new_content": true,
+  "host_template_types": ["PAGE", "LANDING_PAGE"],
+  "module_id": "faq_section"
+}

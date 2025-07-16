@@ -1,0 +1,8 @@
+{
+  "label": "Hero Section",
+  "description": "Hero-Bereich mit Titel, Untertitel und Call-to-Action Button",
+  "icon": "star",
+  "is_available_for_new_content": true,
+  "host_template_types": ["PAGE", "LANDING_PAGE"],
+  "module_id": "hero_section"
+}
