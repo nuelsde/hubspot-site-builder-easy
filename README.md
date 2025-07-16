@@ -106,6 +106,16 @@ portals:
 
 Edit `portalId` and `personalAccessKey` with your HubSpot credentials and adjust `defaultPortal` if you use a different portal name.
 
+## Module `meta.json` configuration
+
+All modules under `src/new-hubspot-template/modules/` use the `content_types` property to declare where a module can be used. Per HubSpot's documentation, valid options include `SITE_PAGE`, `LANDING_PAGE`, and other content types. For example:
+
+```json
+"content_types": ["SITE_PAGE", "LANDING_PAGE"]
+```
+
+This supersedes the older `host_template_types` field.
+
 ## Can I connect a custom domain to my Lovable project?
 
 Yes, you can!
