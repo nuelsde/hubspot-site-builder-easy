@@ -26,8 +26,13 @@
       {
         "name": "icon",
         "label": "Icon",
-        "type": "text",
-        "default": "warning"
+        "type": "icon",
+        "icon_set": "fontawesome-6.4.2",
+        "default": {
+          "name": "triangle-exclamation",
+          "unicode": "f071",
+          "type": "SOLID"
+        }
       },
       {
         "name": "title",
@@ -45,22 +50,38 @@
     ],
     "default": [
       {
-        "icon": "warning",
+        "icon": {
+          "name": "triangle-exclamation",
+          "unicode": "f071",
+          "type": "SOLID"
+        },
         "title": "KI-Unsicherheit lähmt",
         "description": "Ihre Mitarbeiter haben Angst vor KI oder nutzen sie unkontrolliert."
       },
       {
-        "icon": "clock",
+        "icon": {
+          "name": "clock",
+          "unicode": "f017",
+          "type": "SOLID"
+        },
         "title": "Zeitverschwendung durch Tool-Hopping",
         "description": "Ständig neue KI-Tools, aber keine nachhaltigen Ergebnisse."
       },
       {
-        "icon": "people",
+        "icon": {
+          "name": "users",
+          "unicode": "f0c0",
+          "type": "SOLID"
+        },
         "title": "Mitarbeiter werden abgehängt",
         "description": "Während die Konkurrenz KI nutzt, bleiben Ihre Prozesse ineffizient."
       },
       {
-        "icon": "chart-down",
+        "icon": {
+          "name": "arrow-trend-down",
+          "unicode": "e097",
+          "type": "SOLID"
+        },
         "title": "Wettbewerbsnachteil droht",
         "description": "Unternehmen mit systematischer KI-Nutzung überholen Sie."
       }
