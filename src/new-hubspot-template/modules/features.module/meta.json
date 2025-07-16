@@ -1,0 +1,8 @@
+{
+  "label": "Features Section",
+  "description": "Bereich zur Darstellung von Features mit Icons und Beschreibungen",
+  "icon": "grid",
+  "is_available_for_new_content": true,
+  "host_template_types": ["PAGE"],
+  "module_id": "features_section"
+}

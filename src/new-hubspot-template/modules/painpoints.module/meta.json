@@ -1,0 +1,8 @@
+{
+  "label": "Painpoints Section",
+  "description": "Bereich zur Darstellung von Herausforderungen und Lösungen",
+  "icon": "alert-triangle",
+  "is_available_for_new_content": true,
+  "host_template_types": ["PAGE"],
+  "module_id": "painpoints_section"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "downloads_title",
+    "label": "Downloads Title",
+    "type": "text",
+    "required": true,
+    "default": "Kostenlose Downloads"
+  },
+  {
+    "name": "downloads_subtitle",
+    "label": "Downloads Subtitle",
+    "type": "textarea",
+    "default": "Laden Sie unsere kostenlosen Ressourcen herunter"
+  },
+  {
+    "name": "downloads",
+    "label": "Downloads",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 3
+    },
+    "children": [
+      {
+        "name": "icon",
+        "label": "Icon",
+        "type": "text",
+        "help_text": "Emoji oder Icon für den Download",
+        "default": "📄"
+      },
+      {
+        "name": "title",
+        "label": "Download Title",
+        "type": "text",
+        "required": true,
+        "default": "KI-Leitfaden"
+      },
+      {
+        "name": "description",
+        "label": "Download Description",
+        "type": "textarea",
+        "required": true,
+        "default": "Ein umfassender Leitfaden für die KI-Transformation"
+      },
+      {
+        "name": "download_link",
+        "label": "Download Link",
+        "type": "link",
+        "required": true,
+        "default": {
+          "href": "#",
+          "open_in_new_tab": true
+        }
+      },
+      {
+        "name": "cta_text",
+        "label": "CTA Button Text",
+        "type": "text",
+        "required": true,
+        "default": "Jetzt herunterladen"
+      }
+    ]
+  }
+]

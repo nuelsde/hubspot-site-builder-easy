@@ -1,0 +1,68 @@
+[
+  {
+    "name": "company_name",
+    "label": "Company Name",
+    "type": "text",
+    "required": true,
+    "default": "KI-Transformation"
+  },
+  {
+    "name": "company_description",
+    "label": "Company Description",
+    "type": "textarea",
+    "default": "Ihr Partner für erfolgreiche KI-Transformation im Unternehmen"
+  },
+  {
+    "name": "services",
+    "label": "Services",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 10,
+      "default": 4
+    },
+    "children": [
+      {
+        "name": "service_name",
+        "label": "Service Name",
+        "type": "text",
+        "required": true,
+        "default": "KI-Beratung"
+      },
+      {
+        "name": "link",
+        "label": "Service Link",
+        "type": "link",
+        "required": true,
+        "default": {
+          "href": "#services",
+          "open_in_new_tab": false
+        }
+      }
+    ]
+  },
+  {
+    "name": "phone",
+    "label": "Phone Number",
+    "type": "text",
+    "default": "+49 123 456 789"
+  },
+  {
+    "name": "email",
+    "label": "Email Address",
+    "type": "text",
+    "default": "info@ki-transformation.de"
+  },
+  {
+    "name": "address",
+    "label": "Address",
+    "type": "textarea",
+    "default": "Musterstraße 123<br>12345 Berlin"
+  },
+  {
+    "name": "copyright_text",
+    "label": "Copyright Text",
+    "type": "text",
+    "default": "© 2024 KI-Transformation. Alle Rechte vorbehalten."
+  }
+]

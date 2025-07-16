@@ -1,0 +1,23 @@
+[
+  {
+    "name": "title",
+    "label": "Section Title",
+    "type": "text",
+    "required": true,
+    "default": "Bereit für die KI-Transformation?"
+  },
+  {
+    "name": "subtitle",
+    "label": "Section Subtitle",
+    "type": "textarea",
+    "default": "Vereinbaren Sie noch heute einen unverbindlichen Beratungstermin"
+  },
+  {
+    "name": "hubspot_form_id",
+    "label": "HubSpot Form ID",
+    "type": "text",
+    "required": true,
+    "help_text": "Geben Sie die ID des HubSpot Formulars ein",
+    "default": ""
+  }
+]

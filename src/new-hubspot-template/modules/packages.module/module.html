@@ -1,0 +1,40 @@
+<section class="py-20 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-slate-800">{{ module.packages_title }}</h2>
+      {% if module.packages_subtitle %}
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mt-4">{{ module.packages_subtitle }}</p>
+      {% endif %}
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for package in module.packages %}
+        <div class="bg-white p-8 rounded-lg shadow-lg border-2 {% if package.is_featured %}border-orange-500{% else %}border-gray-200{% endif %}">
+          {% if package.is_featured %}
+            <div class="bg-orange-500 text-white px-4 py-2 rounded-lg inline-block mb-4">
+              {{ package.featured_label }}
+            </div>
+          {% endif %}
+          <h3 class="text-2xl font-bold text-slate-800 mb-4">{{ package.package_title }}</h3>
+          <p class="text-gray-600 mb-6">{{ package.package_description }}</p>
+          <div class="mb-6">
+            <span class="text-3xl font-bold text-slate-800">{{ package.price }}</span>
+            {% if package.price_period %}
+              <span class="text-gray-600">{{ package.price_period }}</span>
+            {% endif %}
+          </div>
+          <ul class="space-y-2 mb-8">
+            {% for feature in package.features %}
+              <li class="flex items-center">
+                <span class="text-green-500 mr-2">✓</span>
+                <span class="text-gray-700">{{ feature.feature_name }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+          <a href="{{ package.cta_link.href }}" class="btn btn-primary w-full text-center">
+            {{ package.cta_text }}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,31 @@
+[
+  {
+    "name": "title",
+    "label": "Hero Title",
+    "type": "text",
+    "required": true,
+    "default": "KI-Transformation für Ihr Unternehmen"
+  },
+  {
+    "name": "subtitle",
+    "label": "Hero Subtitle",
+    "type": "textarea",
+    "required": true,
+    "default": "Entdecken Sie das Potenzial Künstlicher Intelligenz für Ihr Unternehmen und transformieren Sie Ihre Geschäftsprozesse mit maßgeschneiderten KI-Lösungen."
+  },
+  {
+    "name": "cta_button_text",
+    "label": "CTA Button Text",
+    "type": "text",
+    "default": "Kostenlose Beratung"
+  },
+  {
+    "name": "cta_button_link",
+    "label": "CTA Button Link",
+    "type": "link",
+    "default": {
+      "href": "#meeting",
+      "open_in_new_tab": false
+    }
+  }
+]

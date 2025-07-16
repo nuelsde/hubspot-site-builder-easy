@@ -1,0 +1,8 @@
+{
+  "label": "Case Studies Section",
+  "description": "Bereich zur Darstellung von Fallstudien und Erfolgsgeschichten",
+  "icon": "trophy",
+  "is_available_for_new_content": true,
+  "host_template_types": ["PAGE"],
+  "module_id": "case_studies_section"
+}

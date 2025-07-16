@@ -1,0 +1,23 @@
+<section class="py-20 px-4">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-slate-800">{{ module.faq_title }}</h2>
+      {% if module.faq_subtitle %}
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mt-4">{{ module.faq_subtitle }}</p>
+      {% endif %}
+    </div>
+    <div class="space-y-4">
+      {% for item in module.faq_group %}
+        <details class="group border rounded-lg p-6 bg-white shadow-sm">
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">
+            <span>{{ item.question }}</span>
+            <span class="group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="mt-4 text-gray-700">
+            {{ item.answer }}
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>

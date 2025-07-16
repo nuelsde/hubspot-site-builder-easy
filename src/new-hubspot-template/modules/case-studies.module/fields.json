@@ -1,0 +1,55 @@
+[
+  {
+    "name": "casestudies_title",
+    "label": "Case Studies Title",
+    "type": "text",
+    "required": true,
+    "default": "Erfolgsgeschichten"
+  },
+  {
+    "name": "casestudies_subtitle",
+    "label": "Case Studies Subtitle",
+    "type": "textarea",
+    "default": "Erfahren Sie, wie andere Unternehmen von unseren KI-Lösungen profitiert haben"
+  },
+  {
+    "name": "case_studies",
+    "label": "Case Studies",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 3
+    },
+    "children": [
+      {
+        "name": "company",
+        "label": "Company Name",
+        "type": "text",
+        "required": true,
+        "default": "Beispiel Unternehmen"
+      },
+      {
+        "name": "challenge",
+        "label": "Challenge",
+        "type": "textarea",
+        "required": true,
+        "default": "Beschreibung der Herausforderung"
+      },
+      {
+        "name": "solution",
+        "label": "Solution",
+        "type": "textarea",
+        "required": true,
+        "default": "Beschreibung der Lösung"
+      },
+      {
+        "name": "quote",
+        "label": "Quote",
+        "type": "textarea",
+        "help_text": "Kundenzitat (optional)",
+        "default": "Die KI-Lösung hat unsere Effizienz um 40% gesteigert."
+      }
+    ]
+  }
+]

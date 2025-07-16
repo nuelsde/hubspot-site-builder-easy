@@ -1,0 +1,55 @@
+[
+  {
+    "name": "painpoints_title",
+    "label": "Painpoints Title",
+    "type": "text",
+    "required": true,
+    "default": "Ihre Herausforderungen"
+  },
+  {
+    "name": "painpoints_subtitle",
+    "label": "Painpoints Subtitle",
+    "type": "textarea",
+    "default": "Wir verstehen die Herausforderungen, vor denen Unternehmen bei der KI-Transformation stehen"
+  },
+  {
+    "name": "painpoints_group",
+    "label": "Painpoints",
+    "type": "group",
+    "occurrence": {
+      "min": 1,
+      "max": 6,
+      "default": 3
+    },
+    "children": [
+      {
+        "name": "icon",
+        "label": "Icon",
+        "type": "text",
+        "help_text": "Emoji oder Icon für den Painpoint",
+        "default": "⚠️"
+      },
+      {
+        "name": "painpoint_title",
+        "label": "Painpoint Title",
+        "type": "text",
+        "required": true,
+        "default": "Komplexe Prozesse"
+      },
+      {
+        "name": "problem_description",
+        "label": "Problem Description",
+        "type": "textarea",
+        "required": true,
+        "default": "Beschreibung des Problems"
+      },
+      {
+        "name": "solution_description",
+        "label": "Solution Description",
+        "type": "textarea",
+        "required": true,
+        "default": "Beschreibung der Lösung"
+      }
+    ]
+  }
+]
