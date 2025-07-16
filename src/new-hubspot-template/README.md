@@ -7,7 +7,7 @@ Ein professionelles HubSpot CMS Template für KI-Transformation Landing Pages.
 ### Template-Dateien
 - `ki-transformation-premium.html` - Haupttemplate
 - `templates/ki-transformation-premium-dnd.html` - Drag & Drop Version
-- `template.json` - Template-Konfiguration
+- `theme.json` - Template-Konfiguration
 
 ### Module
 - `modules/navigation.module/` - Navigation mit Logo und Menü
