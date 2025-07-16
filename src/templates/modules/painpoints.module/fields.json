@@ -27,9 +27,9 @@
         "name": "icon",
         "label": "Icon",
         "type": "icon",
-        "icon_set": "fontawesome-6.4.2",
+        "icon_set": "fontawesome-5.14.0",
         "default": {
-          "name": "triangle-exclamation",
+          "name": "exclamation-triangle",
           "unicode": "f071",
           "type": "SOLID"
         }
@@ -51,7 +51,7 @@
     "default": [
       {
         "icon": {
-          "name": "triangle-exclamation",
+          "name": "exclamation-triangle",
           "unicode": "f071",
           "type": "SOLID"
         },
@@ -78,8 +78,8 @@
       },
       {
         "icon": {
-          "name": "arrow-trend-down",
-          "unicode": "e097",
+          "name": "arrow-down",
+          "unicode": "f063",
           "type": "SOLID"
         },
         "title": "Wettbewerbsnachteil droht",
