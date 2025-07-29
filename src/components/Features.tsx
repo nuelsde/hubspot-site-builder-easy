@@ -1,31 +1,39 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Rocket, Target, Users, Zap } from "lucide-react";
+import { Rocket, Target, Users, Zap, Sparkles } from "lucide-react";
+import { useFeatures } from "@/hooks/useWebsiteContent";
 
-const features = [
-  {
-    icon: <Rocket className="h-12 w-12 text-blue-600" />,
-    title: "Digitale Transformation",
-    description: "Modernisieren Sie Ihr Unternehmen mit innovativen digitalen Lösungen, die Ihre Effizienz steigern und neue Wachstumsmöglichkeiten schaffen."
-  },
-  {
-    icon: <Target className="h-12 w-12 text-blue-600" />,
-    title: "Strategische Beratung",
-    description: "Entwickeln Sie mit uns eine maßgeschneiderte Strategie, die Ihre Unternehmensziele optimal unterstützt und messbare Ergebnisse liefert."
-  },
-  {
-    icon: <Users className="h-12 w-12 text-blue-600" />,
-    title: "Team Development",
-    description: "Stärken Sie Ihr Team durch professionelle Schulungen und Workshops, die die Produktivität und Motivation Ihrer Mitarbeiter erhöhen."
-  },
-  {
-    icon: <Zap className="h-12 w-12 text-blue-600" />,
-    title: "Process Optimization",
-    description: "Optimieren Sie Ihre Geschäftsprozesse durch intelligente Automatisierung und bewährte Best Practices aus der Branche."
-  }
-];
+const iconMap: { [key: string]: JSX.Element } = {
+  rocket: <Rocket className="h-12 w-12 text-blue-600" />,
+  target: <Target className="h-12 w-12 text-blue-600" />,
+  handshake: <Users className="h-12 w-12 text-blue-600" />,
+  bolt: <Zap className="h-12 w-12 text-blue-600" />,
+  default: <Sparkles className="h-12 w-12 text-blue-600" />
+};
 
 export const Features = () => {
+  const { features, loading, error } = useFeatures();
+
+  if (loading) {
+    return (
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-primary mx-auto"></div>
+          <p className="mt-4 text-gray-600">Lade Services...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (error || !features.length) {
+    return (
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto text-center text-gray-600">
+          <p>Fehler beim Laden der Services</p>
+        </div>
+      </section>
+    );
+  }
   return (
     <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
@@ -40,11 +48,11 @@ export const Features = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <Card key={index} className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-gradient-to-br from-slate-50 to-blue-50">
+          {features.map((feature) => (
+            <Card key={feature.id} className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-gradient-to-br from-slate-50 to-blue-50">
               <CardHeader>
                 <div className="mx-auto mb-4 p-3 bg-blue-100 rounded-full w-fit">
-                  {feature.icon}
+                  {iconMap[feature.icon] || iconMap.default}
                 </div>
                 <CardTitle className="text-xl font-bold text-gray-900">
                   {feature.title}

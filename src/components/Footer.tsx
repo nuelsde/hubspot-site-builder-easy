@@ -1,8 +1,10 @@
 
 import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
-import { contactData } from "../data/contact";
+import { useFooterConfig, useContactInfo } from "@/hooks/useWebsiteContent";
 
 export const Footer = () => {
+  const { footerConfig, loading: footerLoading } = useFooterConfig();
+  const { contactInfo, loading: contactLoading } = useContactInfo();
   return (
     <footer className="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -10,11 +12,10 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold text-brand-secondary mb-4">
-              KI-Transformation
+              {footerConfig?.company_name || "KI-Transformation"}
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Ihr Experte für systematische KI-Transformation. Von der Unklarheit zum Innovationstreiber - 
-              mit unserem bewährten 5-Stufen-Modell bringen wir Ihr Unternehmen sicher in die KI-Zukunft.
+              {footerConfig?.company_description || "Ihr Experte für systematische KI-Transformation. Von der Unklarheit zum Innovationstreiber - mit unserem bewährten 5-Stufen-Modell bringen wir Ihr Unternehmen sicher in die KI-Zukunft."}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-brand-secondary transition-colors">
@@ -30,33 +31,46 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#methodology" className="text-gray-300 hover:text-white transition-colors">5-Stufen-Modell</a></li>
-              <li><a href="#packages" className="text-gray-300 hover:text-white transition-colors">KI-Standortbestimmung</a></li>
-              <li><a href="#packages" className="text-gray-300 hover:text-white transition-colors">KI-Schnellstart</a></li>
-              <li><a href="#packages" className="text-gray-300 hover:text-white transition-colors">KI-Transformation</a></li>
-              <li><a href="#downloads" className="text-gray-300 hover:text-white transition-colors">Kostenlose Ressourcen</a></li>
+              {footerConfig?.services ? 
+                footerConfig.services.map((service: any, index: number) => (
+                  <li key={index}>
+                    <a href={service.link} className="text-gray-300 hover:text-white transition-colors">
+                      {service.name}
+                    </a>
+                  </li>
+                )) : 
+                <>
+                  <li><a href="#methodology" className="text-gray-300 hover:text-white transition-colors">5-Stufen-Modell</a></li>
+                  <li><a href="#packages" className="text-gray-300 hover:text-white transition-colors">KI-Standortbestimmung</a></li>
+                  <li><a href="#packages" className="text-gray-300 hover:text-white transition-colors">KI-Schnellstart</a></li>
+                  <li><a href="#packages" className="text-gray-300 hover:text-white transition-colors">KI-Transformation</a></li>
+                  <li><a href="#downloads" className="text-gray-300 hover:text-white transition-colors">Kostenlose Ressourcen</a></li>
+                </>
+              }
             </ul>
           </div>
 
-          {/* Contact Info - now using contactData */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Kontakt</h4>
             <div className="space-y-3">
-              <div className="flex items-center text-gray-300">
-                <Phone size={16} className="mr-2" />
-                <span>{contactData.contact.phone}</span>
-              </div>
-              <div className="flex items-center text-gray-300">
-                <Mail size={16} className="mr-2" />
-                <span>{contactData.contact.email}</span>
-              </div>
-              <div className="flex items-start text-gray-300">
-                <MapPin size={16} className="mr-2 mt-1" />
-                <span>
-                  {contactData.address.street}<br />
-                  {contactData.address.postalCode} {contactData.address.city}
-                </span>
-              </div>
+              {contactInfo?.phone && (
+                <div className="flex items-center text-gray-300">
+                  <Phone size={16} className="mr-2" />
+                  <span>{contactInfo.phone}</span>
+                </div>
+              )}
+              {contactInfo?.email && (
+                <div className="flex items-center text-gray-300">
+                  <Mail size={16} className="mr-2" />
+                  <span>{contactInfo.email}</span>
+                </div>
+              )}
+              {contactInfo?.address && (
+                <div className="flex items-start text-gray-300">
+                  <MapPin size={16} className="mr-2 mt-1" />
+                  <span dangerouslySetInnerHTML={{ __html: contactInfo.address }} />
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -64,7 +78,7 @@ export const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">
-              © 2024 KI-Transformation. Alle Rechte vorbehalten.
+              {footerConfig?.copyright_text || "© 2024 KI-Transformation. Alle Rechte vorbehalten."}
             </p>
             <div className="flex space-x-6">
               <a href="/datenschutz" className="text-gray-400 hover:text-white text-sm">Datenschutz</a>

@@ -1,14 +1,38 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { useHeroContent } from "@/hooks/useWebsiteContent";
 
 export const Hero = () => {
+  const { heroContent, loading, error } = useHeroContent();
+  
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  if (loading) {
+    return (
+      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-brand-primary mx-auto"></div>
+          <p className="mt-4 text-gray-600">Lade Inhalte...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (error || !heroContent) {
+    return (
+      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden min-h-screen flex items-center justify-center">
+        <div className="text-center text-gray-600">
+          <p>Fehler beim Laden der Inhalte</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
@@ -28,24 +52,20 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold text-brand-primary mb-6">
-            Von KI-Unsicherheit zu{" "}
-            <span className="text-brand-primary font-black">
-              KI-Innovation
-            </span>
+            {heroContent.title}
           </h1>
           
           <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Unser bewährtes 5-Phasen-Vorgehensmodell führt etablierte Unternehmen (50-250 MA) 
-            systematisch von KI-Unklarheit zu strategischem KI-Vorteil. Ohne Risiko, mit messbaren Ergebnissen.
+            {heroContent.subtitle}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
               className="bg-brand-primary hover:bg-brand-primary/90 text-lg px-8 py-4"
-              onClick={() => scrollToSection('#meeting')}
+              onClick={() => scrollToSection(heroContent.cta_button_link)}
             >
-              Kostenlose KI-Potenzialanalyse
+              {heroContent.cta_button_text}
               <ArrowRight className="ml-2" size={20} />
             </Button>
             <Button 

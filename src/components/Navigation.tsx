@@ -2,15 +2,19 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useNavigationConfig } from "@/hooks/useWebsiteContent";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { navigationConfig, loading } = useNavigationConfig();
 
-  const navItems = [
-    { name: "Herausforderungen", href: "#painpoints" },
-    { name: "Phasenmodell", href: "#methodology" },
-    { name: "Erfolgsgeschichten", href: "#case-studies" },
+  const defaultNavItems = [
+    { text: "Herausforderungen", link: "#painpoints" },
+    { text: "Phasenmodell", link: "#methodology" },
+    { text: "Erfolgsgeschichten", link: "#case-studies" },
   ];
+
+  const navItems = navigationConfig?.nav_items || defaultNavItems;
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -24,15 +28,9 @@ export const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <img 
-              src="/lovable-uploads/fbe52cdf-232d-42be-8493-9c39364c08ab.png" 
-              alt="MERKUR IMPULSE"
-              className="h-16 w-auto object-cover"
-              style={{
-                objectPosition: 'center',
-                clipPath: 'inset(30px 0 30px 0)'
-              }}
-            />
+            <span className="text-xl font-bold text-brand-primary">
+              {navigationConfig?.brand_name || "KI-Transformation"}
+            </span>
           </div>
 
           {/* Desktop Menu */}
@@ -40,17 +38,17 @@ export const Navigation = () => {
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <button
-                  key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  key={item.text}
+                  onClick={() => scrollToSection(item.link)}
                   className="text-gray-700 hover:text-brand-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors cursor-pointer whitespace-nowrap">
-                  {item.name}
+                  {item.text}
                 </button>
               ))}
               <Button 
                 className="ml-4 bg-brand-secondary hover:bg-orange-600"
-                onClick={() => scrollToSection('#meeting')}
+                onClick={() => scrollToSection(navigationConfig?.cta_button_link || '#meeting')}
               >
-                Termin buchen
+                {navigationConfig?.cta_button_text || "Termin buchen"}
               </Button>
             </div>
           </div>
@@ -73,24 +71,24 @@ export const Navigation = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
               {navItems.map((item) => (
                 <button
-                  key={item.name}
+                  key={item.text}
                   onClick={() => {
-                    scrollToSection(item.href);
+                    scrollToSection(item.link);
                     setIsOpen(false);
                   }}
                   className="text-gray-700 hover:text-brand-secondary block px-3 py-2 rounded-md text-base font-medium w-full text-left"
                 >
-                  {item.name}
+                  {item.text}
                 </button>
               ))}
               <Button 
                 className="w-full mt-2 bg-brand-secondary hover:bg-orange-600"
                 onClick={() => {
-                  scrollToSection('#meeting');
+                  scrollToSection(navigationConfig?.cta_button_link || '#meeting');
                   setIsOpen(false);
                 }}
               >
-                Termin buchen
+                {navigationConfig?.cta_button_text || "Termin buchen"}
               </Button>
             </div>
           </div>
