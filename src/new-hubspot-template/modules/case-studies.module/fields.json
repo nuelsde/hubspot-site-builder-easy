@@ -9,7 +9,7 @@
   {
     "name": "casestudies_subtitle",
     "label": "Case Studies Subtitle",
-    "type": "textarea",
+    "type": "text",
     "default": "Erfahren Sie, wie andere Unternehmen von unseren KI-Lösungen profitiert haben"
   },
   {
@@ -32,21 +32,21 @@
       {
         "name": "challenge",
         "label": "Challenge",
-        "type": "textarea",
+        "type": "text",
         "required": true,
         "default": "Beschreibung der Herausforderung"
       },
       {
         "name": "solution",
         "label": "Solution",
-        "type": "textarea",
+        "type": "text",
         "required": true,
         "default": "Beschreibung der Lösung"
       },
       {
         "name": "quote",
         "label": "Quote",
-        "type": "textarea",
+        "type": "text",
         "help_text": "Kundenzitat (optional)",
         "default": "Die KI-Lösung hat unsere Effizienz um 40% gesteigert."
       }
