@@ -1,7 +1,0 @@
-{
-  "label": "Navigation",
-  "description": "Hauptnavigation mit Logo und Menüpunkten",
-  "icon": "menu",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}

@@ -73,48 +73,6 @@ npm test
 
 Simply open [Lovable](https://lovable.dev/projects/3b9be350-f6a8-47f6-a06d-fe661ec1ad1c) and click on Share -> Publish.
 
-## Installing the HubSpot theme
-
-Follow these steps to install the theme in your HubSpot account.
-
-1. Navigate to the `src/templates` directory of this repository.
-2. Compress all files inside this folder into a ZIP archive **without including the `src/templates` folder itself**.
-3. In HubSpot, open **Marketing > Files and Templates > Design Tools**.
-4. Click **File > Upload** and select the ZIP archive. HubSpot will extract the files into your account.
-5. After the upload finishes, create a new page and choose `ki-transformation.html` or `landing-page.html` from the uploaded theme.
-
-### Using the HubSpot CLI (optional)
-
-You can also upload the templates using the HubSpot CLI. Configure your `hubspot.config.yml` and run:
-
-```sh
-hs upload src/templates <destination-path-in-hubspot>
-```
-
-This command uploads the templates directly to the specified folder in your HubSpot account.
-
-A sample `hubspot.config.yml` is included at the project root:
-
-```yaml
-defaultPortal: default
-portals:
-  - name: default
-    portalId: YOUR-PORTAL-ID
-    authType: personalaccesskey
-    personalAccessKey: YOUR-PERSONAL-ACCESS-KEY
-```
-
-Edit `portalId` and `personalAccessKey` with your HubSpot credentials and adjust `defaultPortal` if you use a different portal name.
-
-## Module `meta.json` configuration
-
-All modules under `src/new-hubspot-template/modules/` use the `content_types` property to declare where a module can be used. Per HubSpot's documentation, valid options include `SITE_PAGE`, `LANDING_PAGE`, and other content types. For example:
-
-```json
-"content_types": ["SITE_PAGE", "LANDING_PAGE"]
-```
-
-This supersedes the older `host_template_types` field.
 
 ## Can I connect a custom domain to my Lovable project?
 

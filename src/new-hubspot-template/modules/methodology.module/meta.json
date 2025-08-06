@@ -1,7 +1,0 @@
-{
-  "label": "Methodology Section",
-  "description": "Bereich zur Darstellung der Methodik mit Phasen und Aktivitäten",
-  "icon": "workflow",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}

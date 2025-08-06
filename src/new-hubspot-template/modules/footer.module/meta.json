@@ -1,7 +1,0 @@
-{
-  "label": "Footer Section",
-  "description": "Footer mit Unternehmensinformationen und Links",
-  "icon": "layout",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}

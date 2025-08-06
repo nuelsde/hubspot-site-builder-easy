@@ -1,7 +1,0 @@
-{
-  "label": "Downloads Section",
-  "description": "Bereich zur Darstellung von Downloads und Ressourcen",
-  "icon": "download",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}

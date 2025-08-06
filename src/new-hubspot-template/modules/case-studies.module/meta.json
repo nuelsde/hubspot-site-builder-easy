@@ -1,7 +1,0 @@
-{
-  "label": "Case Studies Section",
-  "description": "Bereich zur Darstellung von Fallstudien und Erfolgsgeschichten",
-  "icon": "trophy",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}

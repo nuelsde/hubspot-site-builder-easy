@@ -1,7 +1,0 @@
-{
-  "label": "FAQ Section",
-  "description": "Bereich für häufig gestellte Fragen",
-  "icon": "help-circle",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}

@@ -1,7 +1,0 @@
-{
-  "label": "Meeting Section",
-  "description": "Bereich mit HubSpot Formular für Terminvereinbarungen",
-  "icon": "calendar",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}

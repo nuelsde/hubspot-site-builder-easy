@@ -1,7 +1,0 @@
-{
-  "label": "Packages Section",
-  "description": "Bereich zur Darstellung von Paketen und Preisen",
-  "icon": "package",
-  "is_available_for_new_content": true,
-  "content_types": ["SITE_PAGE", "LANDING_PAGE"]
-}
